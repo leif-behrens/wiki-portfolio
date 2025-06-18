@@ -2,7 +2,7 @@
 title: Raspberry Pi
 description: 
 published: true
-date: 2025-06-16T20:00:04.481Z
+date: 2025-06-18T10:41:30.809Z
 tags: 
 editor: markdown
 dateCreated: 2025-06-16T16:03:40.015Z
@@ -13,7 +13,7 @@ dateCreated: 2025-06-16T16:03:40.015Z
 
 ## General Information
 
-| | |
+| Protperty | Value |
 | ---- | ----- |
 | Hostname | raspi4 |
 | IP (static) | 192.168.178.40 |
