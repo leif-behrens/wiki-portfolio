@@ -2,7 +2,7 @@
 title: Wiki.js
 description: 
 published: true
-date: 2025-06-18T10:40:50.798Z
+date: 2025-06-18T10:48:00.041Z
 tags: 
 editor: markdown
 dateCreated: 2025-06-18T10:26:51.405Z
@@ -16,11 +16,8 @@ A central wiki, operated in a Docker container and versioned via Git. This docum
 | Property         		| Value                                                |
 |---------------------|-----------------------------------------------------|
 | **Hostsystem**      | [Raspberry Pi 4B (8 GB RAM)](/home-lab/Server/raspberrypi)|
-| **Betriebssystem**  | Raspberry Pi OS Lite / Debian 11 (Bullseye)         |
-| **Architektur**     | ARMv7 / ARM64 (je nach OS)                          |
-| **Docker Setup**    | Docker + Docker Compose                             |
-| **IP-Adresse**      | 192.168.10.50 (statisch via DHCP oder `.network`)   |
-| **Zugriffs-URL**    | http://wiki.local:3000                              |
+| **IP-Adresse**      | 192.168.178.40 |
+| **Zugriffs-URL**    | http://raspi4:3000                              |
 | **Port-Forwarding** | `3000:3000` in `docker-compose.yml`                 |
 | **Volumes**         | `./data`, `./db-data`, evtl. `./backup`             |
 | **Docker-Netzwerk** | Standard (bridge) oder benannt (`homelab-net`)      |
