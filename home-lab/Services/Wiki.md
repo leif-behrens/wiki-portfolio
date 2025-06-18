@@ -2,7 +2,7 @@
 title: Wiki.js
 description: 
 published: true
-date: 2025-06-18T14:35:06.246Z
+date: 2025-06-18T21:22:41.143Z
 tags: 
 editor: markdown
 dateCreated: 2025-06-18T10:26:51.405Z
@@ -77,7 +77,7 @@ volumes:
   db-data:
 ```
 
-Then I pulled the images with `docker compose pull` and wanted to run the containers with `docker compose up -d`. I kept getting error (I don't remember the exact error). Then I tried to use the default `docker-compose.yml` from the official documentation, 
+Then I pulled the images with `docker compose pull` and wanted to run the containers with `docker compose up -d`. I kept getting error (I don't remember the exact error). Then I tried to use the default `docker-compose.yml` from the official documentation, with the given credentials and just changed the receiving port. It was a success 
 
 
 ## HTTPS
