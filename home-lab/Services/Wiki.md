@@ -2,7 +2,7 @@
 title: Wiki.js
 description: 
 published: true
-date: 2025-06-18T21:22:41.143Z
+date: 2025-06-18T22:00:51.351Z
 tags: 
 editor: markdown
 dateCreated: 2025-06-18T10:26:51.405Z
@@ -77,8 +77,26 @@ volumes:
   db-data:
 ```
 
-Then I pulled the images with `docker compose pull` and wanted to run the containers with `docker compose up -d`. I kept getting error (I don't remember the exact error). Then I tried to use the default `docker-compose.yml` from the official documentation, with the given credentials and just changed the receiving port. It was a success 
+Then I pulled the images with `docker compose pull` and wanted to run the containers with `docker compose up -d`. I kept getting error (I don't remember the exact error). Then I tried to use the default `docker-compose.yml` from the official documentation, with the given credentials and just changed the receiving port. It was a success which means something with passing the variable from the `.env` file to the `docker-compose.yml` file when starting the containers. The passwords I used are very random and contained lots of special characters what might have been the problem. I found out that you can check the configuration with `docker compose config` and there I was able to see that some characters might have been escaped. I changed the passwords and tried to run the containers again but I still got an error. According to the docker logs the issue was to connect to the database. I thought the reason for this is that I already created a persistent database with the default credentials I got from the documentation. 
 
+To avoid any issues in the future I removed all the container and images and restarted the process by pulling the images and started the containers again with the new updated docker-compose.yml:
+```
+# EXPLAIN THE COMMANDS
+docker compose down -v --remove-orphans
+docker rmi ghcr.io/requarks/wiki:2
+docker rmi postgres:15-alpine
+
+# Pulling the needed images
+docker compose pull
+docker compose up -d
+
+# Check interactivly (i guess - check what -f means) the logs
+docker compose logs -f wiki
+```
+
+
+
+Error occured (Network Issues - how did I resolve this? DNS resolve was the issue and I had to update or create the ... file (json) for all containers with the dns entry and restarted the docker daemon)
 
 ## HTTPS
 
