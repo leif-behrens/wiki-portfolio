@@ -2,7 +2,7 @@
 title: Wiki.js
 description: 
 published: true
-date: 2025-06-18T14:21:18.091Z
+date: 2025-06-18T14:35:06.246Z
 tags: 
 editor: markdown
 dateCreated: 2025-06-18T10:26:51.405Z
@@ -14,7 +14,6 @@ I wanted a way to document my technical projects and create a personal knowledge
 
 Since I’ve recently started working more with Docker and wanted to deepen my understanding, I decided to run Wiki.js locally on my Raspberry Pi inside a container.
 
----
 <br>
 
 ## 🖥️ Technical Details
@@ -24,7 +23,6 @@ Since I’ve recently started working more with Docker and wanted to deepen my u
 | **IP-Adresse** | 192.168.178.40 |
 | **Zugriffs-URL** | https://wiki.raspi4:4000 |
 
---- 
 <br>
 
 ## Getting started
@@ -36,6 +34,7 @@ As already mentioned in the beginning I wanted to run wiki.js in a docker contai
 ### Setting up the Raspberry Pi
 I have already installed Docker on my Rasperry Pi, as I have already run MISP at another time. At that time, I had already created the user **docker** on my Raspberry Pi, in whose context my Docker containers run. So I just created a new folder in the home directory `/home/docker/wikisj-docker` in which Wiki.js should run.
 
+<br>
 
 ### Setting up docker compose
 To manage the setup cleanly and handle the connection to the PostgreSQL database, I used Docker Compose.
@@ -78,6 +77,7 @@ volumes:
   db-data:
 ```
 
+Then I pulled the images with `docker compose pull` and wanted to run the containers with `docker compose up -d`. I kept getting error (I don't remember the exact error). Then I tried to use the default `docker-compose.yml` from the official documentation, 
 
 
 ## HTTPS
