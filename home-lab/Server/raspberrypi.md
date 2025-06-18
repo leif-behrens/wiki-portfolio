@@ -1,0 +1,30 @@
+---
+title: Raspberry Pi
+description: 
+published: true
+date: 2025-06-16T20:00:04.481Z
+tags: 
+editor: markdown
+dateCreated: 2025-06-16T16:03:40.015Z
+---
+
+# Raspberry Pi - raspi4
+
+
+## General Information
+
+| | |
+| ---- | ----- |
+| Hostname | raspi4 |
+| IP (static) | 192.168.178.40 |
+| MAC | eth0: **DC:A6:32:ED:63:CD**<br>wlan0: **DC:A6:32:ED:63:CE** |
+| Model | Raspberry Pi 4 Model B Rev 1.4 (8 GB) |
+| OS  | Ubuntu 25.04 |
+| Location | Desk |
+| Status | *Active* |
+
+## Running Services
+
+- [DNS](http://raspi4:3000/en/home-lab/Services/DNS)
+- [Docker](http://raspi4:3000/en/home-lab/Services/Docker)
+- [PiHole](http://raspi4:3000/en/home-lab/Services/PiHole)
