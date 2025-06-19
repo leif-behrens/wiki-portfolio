@@ -2,24 +2,33 @@
 title: Setup
 description: 
 published: true
-date: 2025-06-19T10:02:49.620Z
+date: 2025-06-19T10:09:04.280Z
 tags: 
 editor: markdown
 dateCreated: 2025-06-19T09:59:21.340Z
 ---
 
-# Getting Started
+# Running Wiki.js Locally in Docker on Raspberry Pi
+
+I wanted a way to document my technical projects and create a personal knowledge base. Someone recommended Wiki.js and found that it supports various self-hosting methods — including Docker.
+
+Since I had already started working more with Docker and wanted to deepen my knowledge, I decided to run Wiki.js locally on my Raspberry Pi using containers.
+
+<br>
+
+
+## Getting Started
 
 I wanted to run Wiki.js inside a Docker container. For the setup, I followed the [official Wiki.js Docker installation guide](https://docs.requarks.io/install/docker).
 
 ---
-## Setting Up the Raspberry Pi
+### Setting Up the Raspberry Pi
 
 Docker was already installed on my Raspberry Pi from a previous project where I ran MISP. At that time, I had created a dedicated **docker** user under which my containers now run.  
 I created a new directory `/home/docker/wikijs-docker` to host the Wiki.js setup.
 <br>
 
-## Setting Up Docker Compose
+### Setting Up Docker Compose
 
 To manage the application cleanly and handle the database connection, I used Docker Compose.  
 I created a `docker-compose.yml` file, copied the template from the official Wiki.js docs, and adjusted a few parameters.
