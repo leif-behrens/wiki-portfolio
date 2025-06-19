@@ -2,7 +2,7 @@
 title: Wiki.js
 description: 
 published: true
-date: 2025-06-19T18:19:02.784Z
+date: 2025-06-19T18:22:15.401Z
 tags: 
 editor: markdown
 dateCreated: 2025-06-18T10:26:51.405Z
@@ -13,10 +13,10 @@ I wanted a way to document my technical projects and create a personal knowledge
 
 Since I had already started working more with Docker and wanted to deepen my knowledge, I decided to run Wiki.js locally on my Raspberry Pi using containers.
 
-This section documents the setup, configuration, hardening, and GitHub integration of my self-hosted Wiki.js instance.
+This section documents the entire implementation and configuration of my self-hosted Wiki.js
 
 - [Setup](/home-lab/Services/Wiki/Setup)
-- [Configuration](./Configuration.md)
+- [Configure HTTPS](/home-lab/Services/Wiki/HTTPS)
 - [Hardening](./Hardening.md)
 - [GitHub Integration](./GitHub_Integration.md)
 - [Scripts](./Scripts.md)
@@ -33,20 +33,7 @@ This section documents the setup, configuration, hardening, and GitHub integrati
 
 
 
-
-## HTTPS
-
-### Certificate creation
-
-
-
---- 
-
-## ⚙️ Setup (Docker)
-
-- `docker-compose.yml` mit Postgres
-- Volumes und SSH-Key Mounts
-- Konfigurationspfade
+---
 
 ## 🔐 GitHub Integration
 
