@@ -2,14 +2,14 @@
 title: HTTPS
 description: 
 published: true
-date: 2025-06-19T12:39:05.772Z
+date: 2025-06-19T12:52:37.932Z
 tags: 
 editor: markdown
 dateCreated: 2025-06-19T10:27:40.620Z
 ---
 
 # HTTPS
-In this section I documented the implementation of HTTPS.
+This section documents how I implemented HTTPS for my local Wiki.js instance to secure traffic within my home network.
 
 ## DNS
 I wanted the Wiki to be accessable with the subdomain https://wiki.raspi4 which is why I created a new DNS record on my PiHole DNS server.
