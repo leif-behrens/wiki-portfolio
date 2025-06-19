@@ -2,7 +2,7 @@
 title: HTTPS
 description: 
 published: true
-date: 2025-06-19T12:52:37.932Z
+date: 2025-06-19T18:15:31.587Z
 tags: 
 editor: markdown
 dateCreated: 2025-06-19T10:27:40.620Z
@@ -12,14 +12,16 @@ dateCreated: 2025-06-19T10:27:40.620Z
 This section documents how I implemented HTTPS for my local Wiki.js instance to secure traffic within my home network.
 
 ## DNS
-I wanted the Wiki to be accessable with the subdomain https://wiki.raspi4 which is why I created a new DNS record on my PiHole DNS server.
+To access Wiki.js via `https://wiki.raspi4`, I created a custom DNS record using my Pi-hole DNS server.
+
 
 ## Self-Signed Certificate
 ### Background
-Before my Wiki.js was accessable just via unencrypted HTTP and I wanted to enhance the security by enabling encrypted HTTP traffic with TLS. Since my Raspberry Pi is in a private network and only accessible internally in my home network, I implemented a self-signed Certificate.
+Initially, my Wiki.js instance was only accessible via unencrypted HTTP. To improve security, I wanted to enable encrypted HTTPS using TLS. Since the Raspberry Pi is only reachable inside my private home network, I decided to use a self-signed certificate.
 
 ### Generation
-First of all I decided to use an ECC (Elliptic Curve Cryptography) algorithm for the key generation because it's a secure and less resource consumptive as RSA even with a smaller key. In my small home lab and with very little going on in here, it's not as important but I want to make good choices and correct approaches to internalize such things.
+I chose ECC (Elliptic Curve Cryptography) for key generation because it provides strong security with lower computational overhead compared to RSA — even with shorter key lengths.
+Even though it's not strictly necessary in a small home lab, I wanted to follow good practices and develop the right mindset from the start.
 
 With the following command I generated a private key (`-genkey`) with the secure **NIST P-256** (`prime256v1`) elliptic curve and got the output in the file `wiki.key`.
 
@@ -27,7 +29,8 @@ With the following command I generated a private key (`-genkey`) with the secure
 openssl ecparam -name prime256v1 -genkey -noout -out wiki.key
 ```
 
-With previous generated private key, first I created a new directory where I want my certificate should be placed. I generated a self-signed X.509 certificate that lasts 5 years like this:
+I then created a directory to store the certificate files and generated a self-signed X.509 certificate valid for five years (or 1825 days):
+
 
 ```bash
 sudo mkdir -p /etc/wiki/certs
@@ -39,7 +42,7 @@ openssl req -new -x509 -key wiki.key -out wiki.crt -days 1825 -subj "/CN=wiki.ra
 <br>
 
 ## Setting up a Reverse Proxy
-I decided to implement a reverse proxy with *nginx* that listens to port 4000 and receives every requests from a client, terminates the TLS encryption, checks the certificate and forwards the request to the docker container.
+I set up an *nginx* reverse proxy that listens on port 4000, terminates TLS connections, validates the certificate, and forwards requests to the Docker container.
 
 ### nginx Installation
 I installed nginx with the following command:
@@ -49,7 +52,7 @@ sudo apt update && sudo apt install nginx -y
 ```
 
 ### Configure nginx
-I created the file `/etc/nginx/sites-available/wiki` and wrote the configuration file (with the help from ChatGPT):
+I created the configuration file `/etc/nginx/sites-available/wiki` with the following content (with some help of ChatGPT):
 
 ```nginx
 server {
@@ -78,10 +81,12 @@ sudo rm /etc/nginx/sites-enabled/default
 sudo nginx -t && sudo systemctl reload nginx
 ```
 
+This ensures that only secure HTTPS traffic reaches the Wiki.js container.
+
 ---
 <br>
 
-## Reconfigure Docker Compose
+## Docker Compose Change
 To make the Wiki.js only available via HTTPS and through the reverse proxy, I had to make a little change in my `docker-compose.yml` file.
 From: 
 ```yaml
@@ -94,4 +99,7 @@ ports:
 	- "127.0.0.1:3000:3000"
 ```
 
-This way the container is only available from localhost e.g. the Raspberry Pi itself. 
+This change ensures the container is only accessible from `localhost`, i.e., only by the Raspberry Pi itself, and not directly from the network.
+
+## Conclusion
+With this setup, all traffic to Wiki.js is now encrypted, and the service is only exposed via Nginx on port 4000 using HTTPS.
