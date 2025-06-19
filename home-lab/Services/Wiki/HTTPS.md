@@ -2,7 +2,7 @@
 title: HTTPS
 description: 
 published: true
-date: 2025-06-19T11:21:51.678Z
+date: 2025-06-19T11:31:47.203Z
 tags: 
 editor: markdown
 dateCreated: 2025-06-19T10:27:40.620Z
@@ -10,6 +10,9 @@ dateCreated: 2025-06-19T10:27:40.620Z
 
 # HTTPS
 In this section I documented the implementation of HTTPS.
+
+## DNS
+I wanted the rasp
 
 ## Self-Signed Certificate
 ### Background
@@ -35,4 +38,4 @@ openssl req -new -x509 -key wiki.key -out wiki.crt -days 1825 -subj "/CN=wiki.ra
 
 ## Reconfigure Docker Compose
 
-## DNS
+
