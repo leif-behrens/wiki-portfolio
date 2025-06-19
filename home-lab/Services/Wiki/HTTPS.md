@@ -2,7 +2,7 @@
 title: HTTPS
 description: 
 published: true
-date: 2025-06-19T11:31:47.203Z
+date: 2025-06-19T12:29:17.546Z
 tags: 
 editor: markdown
 dateCreated: 2025-06-19T10:27:40.620Z
@@ -12,7 +12,7 @@ dateCreated: 2025-06-19T10:27:40.620Z
 In this section I documented the implementation of HTTPS.
 
 ## DNS
-I wanted the rasp
+I wanted the Wiki to be accessable with the subdomain https://wiki.raspi4 which is why I created a new DNS record on my PiHole DNS server.
 
 ## Self-Signed Certificate
 ### Background
@@ -33,9 +33,59 @@ With previous generated private key I generated a self-signed X.509 certificate 
 openssl req -new -x509 -key wiki.key -out wiki.crt -days 1825 -subj "/CN=wiki.raspi4"
 ```
 
+CERTIFICATE PLACEMENT
+
 
 ## Setting up a Reverse Proxy
+I decided to implement a reverse proxy with *nginx* that listens to port 4000 and receives every requests from a client, terminates the TLS encryption, checks the certificate and forwards the request to the docker container.
+
+### nginx Installation
+I installed nginx with the following command:
+
+```bash
+sudo apt update && sudo apt install nginx -y
+```
+
+### Configure nginx
+I created the file `/etc/nginx/sites-available/wiki` and wrote the configuration file (with the help from ChatGPT):
+
+```nginx
+server {
+    listen 4000 ssl;
+    server_name wiki.raspi4;
+
+    ssl_certificate     /etc/wiki/certs/wiki.crt;
+    ssl_certificate_key /etc/wiki/certs/wiki.key;
+
+    location / {
+        proxy_pass         http://localhost:3003;
+        proxy_http_version 1.1;
+        proxy_set_header   Host $host;
+        proxy_set_header   X-Real-IP $remote_addr;
+        proxy_set_header   X-Forwarded-For $proxy_add_x_forwarded_for;
+        proxy_set_header   X-Forwarded-Proto $scheme;
+    }
+}
+```
+
+Then I activated the wiki by creating a symbolic link to the `sites-available`, removed the default page (which is listening to port 80, which is already occupied), tested the configuration and reloaded *nginx*:
+
+```bash
+sudo ln -s /etc/nginx/sites-available/wiki /etc/nginx/sites-enabled/wiki
+sudo rm /etc/nginx/sites-enabled/default
+sudo nginx -t && sudo systemctl reload nginx
+```
 
 ## Reconfigure Docker Compose
-
+To make the Wiki.js only available via HTTPS and through the reverse proxy, I had to make a little change in my `docker-compose.yml` file.
+From: 
+```yaml
+ports:
+	- "3000:3000"
+```
+to 
+```yaml
+ports:
+	- "127.0.0.1:3000:3000"
+```
 
