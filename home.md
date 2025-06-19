@@ -2,7 +2,7 @@
 title: Home
 description: 
 published: true
-date: 2025-06-19T09:38:05.085Z
+date: 2025-06-19T09:39:51.138Z
 tags: 
 editor: markdown
 dateCreated: 2025-06-17T21:46:38.516Z
@@ -18,7 +18,7 @@ It includes hands-on project setups, technical notes, service configurations, an
 
 ## 📁 Main Sections
 
-- 🏠 [Home-Lab](/Home-Lab)  
+- 🏠 [Home-Lab](/home-lab)
   Overview of my local infrastructure — servers, services, hardware and configuration.
 
 - 📖 [Glossary](/Glossary)  
