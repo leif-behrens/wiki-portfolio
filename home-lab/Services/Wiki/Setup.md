@@ -2,7 +2,7 @@
 title: Setup
 description: 
 published: true
-date: 2025-06-19T10:14:39.411Z
+date: 2025-06-19T10:16:26.021Z
 tags: 
 editor: markdown
 dateCreated: 2025-06-19T09:59:21.340Z
