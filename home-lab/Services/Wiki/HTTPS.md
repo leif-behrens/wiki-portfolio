@@ -2,7 +2,7 @@
 title: HTTPS
 description: 
 published: true
-date: 2025-06-19T12:29:17.546Z
+date: 2025-06-19T12:34:11.704Z
 tags: 
 editor: markdown
 dateCreated: 2025-06-19T10:27:40.620Z
@@ -58,7 +58,7 @@ server {
     ssl_certificate_key /etc/wiki/certs/wiki.key;
 
     location / {
-        proxy_pass         http://localhost:3003;
+        proxy_pass         http://localhost:3000;
         proxy_http_version 1.1;
         proxy_set_header   Host $host;
         proxy_set_header   X-Real-IP $remote_addr;
@@ -89,3 +89,4 @@ ports:
 	- "127.0.0.1:3000:3000"
 ```
 
+This way the container is only available from localhost e.g. the Raspberry Pi itself. 
