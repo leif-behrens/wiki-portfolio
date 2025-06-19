@@ -2,7 +2,7 @@
 title: CTF - Level One
 description: 
 published: true
-date: 2025-06-19T20:38:23.814Z
+date: 2025-06-19T20:56:40.893Z
 tags: 
 editor: markdown
 dateCreated: 2025-06-19T19:39:51.723Z
@@ -214,30 +214,36 @@ In the `/var/www/html` folder, there was also `index2.html`. I opened it in the 
 
 ![webpage_flags_4.png](/thm/webpage_flags_4.png)
 
-Found Flag: ***{C0nf1gur4t10n_Fl4g}***
+> Found Flag: ***{C0nf1gur4t10n_Fl4g}***
+{.is-success}
+
 <br>
 
 ## 5. Webpage Flag
 
-In the */var/www/html* folder was also the file *secret.txt* which contained the next webpage flag:
+The file `secret.txt` in `/var/www/html` contained the fifth webpage flag.
 
 ![webpage_flags_5.png](/thm/webpage_flags_5.png)
 
-Found Flag: ***{S3cr3t_Fl4g}***
+> Found Flag: ***{S3cr3t_Fl4g}***
+{.is-success}
+
 <br>
 
 ## 6. Webpage Flag
 
-In the */var/www/html* folder was also the file *robots.txt* which contained the next webpage flag:
+The file `robots.txt` in `/var/www/html` contained the sixth webpage flag.
 
 ![webpage_flags_6.png](/thm/webpage_flags_6.png)
 
-Found Flag: ***{Robots_Flag}***
+> Found Flag: ***{Robots_Flag}***
+{.is-success}
+
 <br>
 
 ## 7. and 8. Webpage Flags
 
-In the */var/www/html* folder was also the folder *flag*, which has another subdirectory *flag* which contained the next two flags:
+In the `/var/www/html` folder, there was a folder `flag`, which contained another subfolder `flag` with two files.
 
 ![webpage_flags_7_8_general.png](/thm/webpage_flags_7_8_general.png)
 <br>
@@ -246,18 +252,21 @@ In the */var/www/html* folder was also the folder *flag*, which has another subd
 
 ![webpage_flags_7.png](/thm/webpage_flags_7.png)
 
-Found Flag: ***{Fl4g_fl4g_fl4g}***
+> Found Flag: ***{Fl4g_fl4g_fl4g}***
+{.is-success}
+
 <br>
 
 ### 8. Webpage Flag
 
-![webpage_flags_8.png](/thm/webpage_flags_8.png)
+![webpage_flags_8_1.png](/thm/webpage_flags_8_1.png)
 
-The content of *flag2.txt* was a base64 encoded string which I decoded with the online GitHub-Tool CyberChef:
+The file `flag2.txt` contained a base64-encoded string, which I decoded using the online GitHub tool [CyberChef](https://gchq.github.io/CyberChef/).
 
-![webpage_flags_9.png](/thm/webpage_flags_9.png)
+![webpage_flags_8_2.png](/thm/webpage_flags_8_2.png)
 
-Found Flag: ***{Fl4g2_fl4g2_fl4g2}***
+> Found Flag: ***{Fl4g2_fl4g2_fl4g2}***
+{.is-success}
 
 ---
 
@@ -265,60 +274,58 @@ Found Flag: ***{Fl4g2_fl4g2_fl4g2}***
 
 ## 1. Other Flag
 
-The first other flag was shown after starting a ssh session:
+The first other flag was displayed immediately after I established a SSH session.
 
 ![other_flag_1.png](/thm/other_flag_1.png)
 
-Found Flag: ***{h4ck3r5_r_us}***
+> Found Flag: ***{h4ck3r5_r_us}***
+{.is-success}
+
 <br>
 
 ## 2. Other Flag
 
-I knew from a previous task that the target server runs an ftp service. I also tried to log in as anonymous because this user has another storage area and the login worked. In the anonymous-directory were two files - *flag.txt* and *files.zip*.
+I knew from a previous task that the target server ran an FTP service. I attempted to log in as `anonymous`, which succeeded. The `anonymous` directory contained `flag.txt` and `files.zip`.
 
 ![other_flag_2_1.png](/thm/other_flag_2_1.png)
 
-I downloaded both to my AttackBox.
+I downloaded both files to my attack box.
 
 ![other_flag_2_2.png](/thm/other_flag_2_2.png)
 
-The content of *flag.txt* was the next flag:
+The content of `flag.txt` included the next flag and a hint about the zip file.
 
 ![other_flag_2_3.png](/thm/other_flag_2_3.png)
 
-It also contained a hint, that I should know the password for *files.zip*
-
-Found Flag: ***{ftp_server_4_lyfe}***
+> Found Flag: ***{ftp_server_4_lyfe}***
+{.is-success}
 
 ---
 
-# files.zip password & John flag
+# files.zip Password & John Flag
 
-The zip-file I downloaded from the ftp server before - *files.zip* - contains 2 files (*secret.zip* and *wordlist.txt*) and it required a password.
+The previously downloaded `files.zip` archive contained `secret.zip` and `wordlist.txt` and required a password.
 
 ![file.zip_john_flag_1_1.png](/thm/file.zip_john_flag_1_1.png)
 
-I had no idea how to get the password for the files.zip. It’s not a common password in a known wordlist list like *rockyou.txt.* I asked my mentor from masterschool and fellow students but they didn't know it either, how to figure it out. The hint from the previous flag "that I should know the password for *files.zip*" didn't help me either. I could've brute force it with *hydra* but this could take a long time. Thats why I searched online.
-
-I found the password in an [CTF Walkthrough](https://medium.com/@ronjvo/masterschool-ctf-d4849d3c5bf1). The password was ***Masterschool***.
+I was unsure how to obtain the password. Common wordlists such as `rockyou.txt` didn’t help. Also the hint from the previous flag, that *I should know the the password for `files.zip`* didn't help. After consulting with fellow students and my mentor without success, I found the password in a [CTF Walkthrough](https://medium.com/@ronjvo/masterschool-ctf-d4849d3c5bf1): **Masterschool**.
 
 ![file.zip_john_flag_1_2.png](/thm/file.zip_john_flag_1_2.png)
 
-The other zip-file also required a password:
+The second zip file also required a password:
 ![file.zip_john_flag_1_3.png](/thm/file.zip_john_flag_1_3.png)
 
-I extracted the used hash or encryptionkey of *secret.zip* with zip2john and saved the output to a new file *secret.txt*:
+I extracted the hash of `secret.zip` with `zip2john` and saved the output to `secret.txt`:
 
 ![file.zip_john_flag_1_9.png](/thm/file.zip_john_flag_1_9.png)
 
-Then I tried to get the password for *secret.zip* by using john the ripper and the extracted wordlist of *files.zip:*
+Then I cracked the password using `john` and the extracted wordlist:
 
 ![file.zip_john_flag_1_6.png](/thm/file.zip_john_flag_1_6.png)
 
-The password was ***CTF_TIME***
-
-I unzipped the *secret.zip* file with the cracked password and in this zip archive was the file *john_flag.txt,* which contained the last flag:
+The password was **CTF_TIME**. I extracted `john_flag.txt` using this password. The file contained the last flag.
 
 ![file.zip_john_flag_1_7.png](/thm/file.zip_john_flag_1_7.png)
 
-John flag: ***{LetMe1n123!@#}***
+> John flag: ***{LetMe1n123!@#}***
+{.is-success}
