@@ -2,7 +2,7 @@
 title: Wiki.js
 description: 
 published: true
-date: 2025-06-19T12:12:54.856Z
+date: 2025-06-19T18:19:02.784Z
 tags: 
 editor: markdown
 dateCreated: 2025-06-18T10:26:51.405Z
