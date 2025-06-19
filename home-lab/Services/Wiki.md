@@ -2,7 +2,7 @@
 title: Wiki.js
 description: 
 published: true
-date: 2025-06-18T22:05:05.550Z
+date: 2025-06-19T08:48:09.846Z
 tags: 
 editor: markdown
 dateCreated: 2025-06-18T10:26:51.405Z
@@ -10,9 +10,9 @@ dateCreated: 2025-06-18T10:26:51.405Z
 
 # Running Wiki.js Locally in Docker on Raspberry Pi
 
-I wanted a way to document my technical projects and create a personal knowledge base. After looking into different options, I came across Wiki.js and found that it supports various self-hosting methods — including Docker.
+I wanted a way to document my technical projects and create a personal knowledge base. Someone recommended Wiki.js and found that it supports various self-hosting methods — including Docker.
 
-Since I’ve recently started working more with Docker and wanted to deepen my understanding, I decided to run Wiki.js locally on my Raspberry Pi inside a container.
+Since I had already started working more with Docker and wanted to deepen my knowledge, I decided to run Wiki.js locally on my Raspberry Pi using containers.
 
 <br>
 
@@ -25,23 +25,26 @@ Since I’ve recently started working more with Docker and wanted to deepen my u
 
 <br>
 
-## Getting started
-As already mentioned in the beginning I wanted to run wiki.js in a docker container. I used the [official documentation](https://docs.requarks.io/install/docker) from wiki.js for the implementation.
+## Getting Started
+
+As mentioned earlier, I wanted to run Wiki.js inside a Docker container. For the setup, I followed the [official Wiki.js Docker installation guide](https://docs.requarks.io/install/docker).
 
 ---
+### Setting Up the Raspberry Pi
+
+Docker was already installed on my Raspberry Pi from a previous project where I ran MISP. At that time, I had created a dedicated **docker** user under which my containers now run.  
+I created a new directory `/home/docker/wikijs-docker` to host the Wiki.js setup.
+
 <br>
 
-### Setting up the Raspberry Pi
-I have already installed Docker on my Rasperry Pi, as I have already run MISP at another time. At that time, I had already created the user **docker** on my Raspberry Pi, in whose context my Docker containers run. So I just created a new folder in the home directory `/home/docker/wikisj-docker` in which Wiki.js should run.
 
-<br>
+### Setting Up Docker Compose
 
-### Setting up docker compose
-To manage the setup cleanly and handle the connection to the PostgreSQL database, I used Docker Compose.
-I created the `docker-compose.yml` file, copied the information from the official documentation into this file and changed some parameters.
-By default, or as stated in the official documentation, sample credentials were in plain text in `docker-compose.yml`. I have moved these to an `.env` file and access them with the notation `${<variable>}`.
-I changed the port from `“80:3000”` to `“3000:3000”` as port 80 is already used elsewhere on my Raspberry Pi.
+To manage the application cleanly and handle the database connection, I used Docker Compose.  
+I created a `docker-compose.yml` file, copied the template from the official Wiki.js docs, and adjusted a few parameters.
 
+By default, the example configuration contains hardcoded credentials. I moved those into a `.env` file, changed the values and referenced them via `${VARIABLE}` syntax inside the Compose file.  
+I also changed the exposed port from `80:3000` to `3000:3000`, since port 80 was already in use on the Raspberry Pi.
 
 ```yaml
 services:
@@ -77,26 +80,64 @@ volumes:
   db-data:
 ```
 
-Then I pulled the images with `docker compose pull` and wanted to run the containers with `docker compose up -d`. I kept getting error (I don't remember the exact error). Then I tried to use the default `docker-compose.yml` from the official documentation, with the given credentials and just changed the receiving port. It was a success which means something with passing the variable from the `.env` file to the `docker-compose.yml` file when starting the containers. The passwords I used are very random and contained lots of special characters what might have been the problem. I found out that you can check the configuration with `docker compose config` and there I was able to see that some characters might have been escaped. I changed the passwords and tried to run the containers again but I still got an error. According to the docker logs the issue was to connect to the database. I thought the reason for this is that I already created a persistent database with the default credentials I got from the documentation. 
+I pulled the images with `docker compose pull` and tried starting the stack with `docker compose up -d`, but encountered errors (unfortunately I didn’t save the exact message).
+To narrow it down, I temporarily switched back to the default compose file using the example credentials — only changing the port — and that worked.
 
-To avoid any issues in the future I removed all the container and images and restarted the process by pulling the images and started the containers again with the new updated docker-compose.yml:
-```
-# EXPLAIN THE COMMANDS
+This indicated that something went wrong with passing environment variables from the `.env` file.
+The passwords I had used were long and contained lots of special characters, which I suspected might be the problem. Using `docker compose config`, I noticed that some characters might have been improperly escaped.
+After simplifying the passwords, the error persisted, this time pointing to a database connection failure.
+
+I realized that I might have created a persistent volume with invalid database credentials during one of the first runs.
+To reset everything, I removed the volumes and images and started fresh:
+
+```bash
+# Clean up containers, volumes, and images
 docker compose down -v --remove-orphans
 docker rmi ghcr.io/requarks/wiki:2
 docker rmi postgres:15-alpine
 
-# Pulling the needed images
+# Pull fresh images and restart
 docker compose pull
 docker compose up -d
 
-# Check interactivly (i guess - check what -f means) the logs
+# Follow logs to verify startup
 docker compose logs -f wiki
 ```
 
+This time it worked. I could access the Wiki via my browser. However, as I navigated through the interface, I repeatedly received the following error:
 
+![an_unexpected_error_occured.png](/services/wikijs/an_unexpected_error_occured.png)
 
-Error occured (Network Issues - how did I resolve this? DNS resolve was the issue and I had to update or create the ... file (json) for all containers with the dns entry and restarted the docker daemon)
+I looked up this error but couldn't get any good insights. Using Firefox developer tools, I noticed that Wiki.js was trying to connect to external resources. I checked online what kind of external resources these are and it seems like it was trying to get different language packages. I suspected a DNS resolution issue inside the container. I verified this with:
+
+```bash
+docker exec -it 7d0c96dc3a76 ping google.com	# No response
+docker exec -it 7d0c96dc3a76 ping 8.8.8.8			# Successful response
+```
+
+So the container could reach the internet by IP, but not by domain name. I found the issue and just had to let my Wiki.js container know, what DNS server it should use. 
+
+I researched how to let my container know the DNS and I found two options:
+- Specify DNS server(s) in the docker-compose.yml file (per container)
+- Configure DNS globally for all containers via Docker daemon settings
+
+I chose the global approach since I already have a central DNS server (Pi-hole) on the same Raspberry Pi.
+
+I created `/etc/docker/daemon.json` with the following content:
+
+```json
+{
+        "dns": ["192.168.178.40", "192.168.178.1", "8.8.8.8"]
+}
+```
+
+192.168.178.40 is my Raspberry Pi. As a backout DNS server I used my home router (192.168.178.1) and the google DNS server.
+
+Then I restarted the Docker service:
+
+`sudo systemctl restart docker`
+
+After that, everything worked as expected.
 
 ## HTTPS
 
