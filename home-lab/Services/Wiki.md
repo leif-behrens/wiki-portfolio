@@ -2,13 +2,16 @@
 title: Wiki.js
 description: 
 published: true
-date: 2025-06-19T10:06:16.154Z
+date: 2025-06-19T12:12:54.856Z
 tags: 
 editor: markdown
 dateCreated: 2025-06-18T10:26:51.405Z
 ---
 
 # Wiki.js – Self-hosted Knowledge Platform
+I wanted a way to document my technical projects and create a personal knowledge base. Someone recommended Wiki.js and found that it supports various self-hosting methods, including Docker.
+
+Since I had already started working more with Docker and wanted to deepen my knowledge, I decided to run Wiki.js locally on my Raspberry Pi using containers.
 
 This section documents the setup, configuration, hardening, and GitHub integration of my self-hosted Wiki.js instance.
 
@@ -17,6 +20,17 @@ This section documents the setup, configuration, hardening, and GitHub integrati
 - [Hardening](./Hardening.md)
 - [GitHub Integration](./GitHub_Integration.md)
 - [Scripts](./Scripts.md)
+<br>
+
+# 🖥️ Technical Details
+| Property | Value |
+|---|---|
+| **Hostsystem** | [Raspberry Pi 4B (8 GB RAM)](/home-lab/Server/raspberrypi)|
+| **IP-Address** | 192.168.178.40 |
+| **URL** | https://wiki.raspi4:4000 |
+
+<br>
+
 
 
 
