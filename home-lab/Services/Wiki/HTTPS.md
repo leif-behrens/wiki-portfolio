@@ -2,7 +2,7 @@
 title: HTTPS
 description: 
 published: true
-date: 2025-06-19T12:34:11.704Z
+date: 2025-06-19T12:39:05.772Z
 tags: 
 editor: markdown
 dateCreated: 2025-06-19T10:27:40.620Z
@@ -27,14 +27,16 @@ With the following command I generated a private key (`-genkey`) with the secure
 openssl ecparam -name prime256v1 -genkey -noout -out wiki.key
 ```
 
-With previous generated private key I generated a self-signed X.509 certificate that lasts 5 years like this:
+With previous generated private key, first I created a new directory where I want my certificate should be placed. I generated a self-signed X.509 certificate that lasts 5 years like this:
 
 ```bash
+sudo mkdir -p /etc/wiki/certs
+cd /etc/wiki/certs
 openssl req -new -x509 -key wiki.key -out wiki.crt -days 1825 -subj "/CN=wiki.raspi4"
 ```
 
-CERTIFICATE PLACEMENT
-
+---
+<br>
 
 ## Setting up a Reverse Proxy
 I decided to implement a reverse proxy with *nginx* that listens to port 4000 and receives every requests from a client, terminates the TLS encryption, checks the certificate and forwards the request to the docker container.
@@ -75,6 +77,9 @@ sudo ln -s /etc/nginx/sites-available/wiki /etc/nginx/sites-enabled/wiki
 sudo rm /etc/nginx/sites-enabled/default
 sudo nginx -t && sudo systemctl reload nginx
 ```
+
+---
+<br>
 
 ## Reconfigure Docker Compose
 To make the Wiki.js only available via HTTPS and through the reverse proxy, I had to make a little change in my `docker-compose.yml` file.
