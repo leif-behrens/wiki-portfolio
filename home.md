@@ -2,14 +2,34 @@
 title: Home
 description: 
 published: true
-date: 2025-06-17T21:46:50.231Z
+date: 2025-06-19T09:07:02.581Z
 tags: 
 editor: markdown
 dateCreated: 2025-06-17T21:46:38.516Z
 ---
 
-# Home
+# Welcome to my IT Wiki
 
-Choose an area:
+This Wiki is my personal knowledge base, documentation platform, and IT portfolio — covering what I work on, learn, and explore.
 
-- [Documentation](/documentation)
+It includes hands-on project setups, technical notes, service configurations, and structured terminology — mostly built around my Homelab.
+
+---
+
+## 📁 Main Sections
+
+- 🏠 [Home-Lab](/Home-Lab)  
+  Overview of my local infrastructure — servers, services, hardware and configuration.
+
+- 📖 [Glossary](/Glossary)  
+  Structured IT terminology across networking, DevOps, security, and systems.
+
+- 🧰 [Tools](/Tools)  
+  Notes and usage references for CLI tools, scanners, and general-purpose utilities.
+
+- 🧠 [TryHackMe](/TryHackMe)  
+  Walkthroughs, CTF notes, and learning documentation from the TryHackMe platform.
+
+---
+
+> This Wiki grows continuously as I expand and refine my infrastructure, tools, and technical skillset.
