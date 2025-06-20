@@ -2,7 +2,7 @@
 title: Capture The Flag (CTF)
 description: 
 published: true
-date: 2025-06-20T07:22:41.508Z
+date: 2025-06-20T07:23:10.716Z
 tags: 
 editor: markdown
 dateCreated: 2025-06-20T07:22:41.508Z
@@ -13,5 +13,5 @@ dateCreated: 2025-06-20T07:22:41.508Z
 This section contains write-ups of CTF challenges completed on TryHackMe.  
 Each subpage includes step-by-step walkthroughs, tools used, and captured flags.
 
-- [CTF_Level_One](/TryHackMe/CTF/CTF_Level_One)
+- [CTF - Level One](/TryHackMe/CTF/CTF_Level_One)
 
