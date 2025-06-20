@@ -2,7 +2,7 @@
 title: CTF - Level One
 description: 
 published: true
-date: 2025-06-20T07:33:32.661Z
+date: 2025-06-20T08:08:02.013Z
 tags: 
 editor: markdown
 dateCreated: 2025-06-19T19:39:51.723Z
@@ -333,7 +333,7 @@ The second zip file also required a password:
 
 I extracted the hash of `secret.zip` with `zip2john` and saved the output to `secret.txt`:
 
-![file.zip_john_flag_1_9.png](/thm/file.zip_john_flag_1_9.png)
+![file.zip_john_flag_1_4.png](/thm/file.zip_john_flag_1_4.png)
 
 Then I cracked the password using `john` and the extracted wordlist:
 
