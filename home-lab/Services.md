@@ -2,7 +2,7 @@
 title: Services
 description: 
 published: true
-date: 2025-06-20T09:54:35.680Z
+date: 2025-06-20T09:55:07.125Z
 tags: 
 editor: markdown
 dateCreated: 2025-06-20T09:53:45.967Z
@@ -17,4 +17,4 @@ Each entry documents setup, configuration, and purpose of individual tools and p
 - [DNS](/home-lab/Services/DNS) – Local DNS service for name resolution  
 - [Docker](/home-lab/Services/Docker) – Container runtime and management  
 - [PiHole](/home-lab/Services/PiHole) – Network-wide ad blocking and DNS filtering
-- [Wiki.js](/home-lab/Services/Wiki.js) – Documentation platform running in Docker
+- [Wiki.js](/home-lab/Services/Wiki) – Documentation platform running in Docker
