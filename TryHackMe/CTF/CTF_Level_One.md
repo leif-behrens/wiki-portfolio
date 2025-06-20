@@ -2,7 +2,7 @@
 title: CTF - Level One
 description: 
 published: true
-date: 2025-06-20T07:32:21.894Z
+date: 2025-06-20T07:33:32.661Z
 tags: 
 editor: markdown
 dateCreated: 2025-06-19T19:39:51.723Z
@@ -28,7 +28,7 @@ dateCreated: 2025-06-19T19:39:51.723Z
 
 ## Web Analysis
 - Firefox Developer Tools – Inspecting HTML comments and embedded data  
-- **CyberChef** – Web-based decoding tool (e.g., for base64)
+- [CyberChef](https://gchq.github.io/CyberChef/) – Web-based decoding tool
 
 ---
 
@@ -277,7 +277,7 @@ In the `/var/www/html` folder, there was a folder `flag`, which contained anothe
 
 ![webpage_flags_8_1.png](/thm/webpage_flags_8_1.png)
 
-The file `flag2.txt` contained a base64-encoded string, which I decoded using the online GitHub tool [CyberChef](https://gchq.github.io/CyberChef/).
+The file `flag2.txt` contained a base64-encoded string, which I decoded using [CyberChef](https://gchq.github.io/CyberChef/).
 
 ![webpage_flags_8_2.png](/thm/webpage_flags_8_2.png)
 
