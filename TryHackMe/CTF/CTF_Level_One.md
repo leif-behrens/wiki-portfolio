@@ -2,17 +2,33 @@
 title: CTF - Level One
 description: 
 published: true
-date: 2025-06-19T20:56:40.893Z
+date: 2025-06-20T07:32:21.894Z
 tags: 
 editor: markdown
 dateCreated: 2025-06-19T19:39:51.723Z
 ---
 
-# General information
+# General Information
 - Target IP: `10.10.220.25`
 - SSH Username: `ctf`
 - SSH Password: `ctf`
 - Room: [CTF Level One](https://tryhackme.com/room/ctflevelone)
+
+# Tools Used
+
+## Access & Navigation
+- `ssh` – Remote login to the target machine  
+- `find`, `ls`, `cd`, `cat` – Basic Linux commands for file system and network inspection  
+- `ftp` – File transfer and exploration of anonymous directories
+
+## Hash Cracking
+- `hashid` – Identifying hash algorithms  
+- `john` (John the Ripper) – Cracking password hashes  
+- `zip2john` – Extracting hashes from encrypted zip archives
+
+## Web Analysis
+- Firefox Developer Tools – Inspecting HTML comments and embedded data  
+- **CyberChef** – Web-based decoding tool (e.g., for base64)
 
 ---
 
