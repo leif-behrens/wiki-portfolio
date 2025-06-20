@@ -1,7 +1,0 @@
-## 🧩 Capture The Flag (CTF)
-
-This section contains write-ups of CTF challenges completed on TryHackMe.  
-Each subpage includes step-by-step walkthroughs, tools used, and captured flags.
-
-link:/TryHackMe/CTF/CTF_Level_One[CTF_Level_One]
-- [CTF Level 1](/TryHackMe/CTF/CTF_Level_1)
