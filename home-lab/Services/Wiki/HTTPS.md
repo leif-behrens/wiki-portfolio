@@ -2,7 +2,7 @@
 title: HTTPS
 description: 
 published: true
-date: 2025-06-19T18:15:31.587Z
+date: 2025-06-23T13:08:15.687Z
 tags: 
 editor: markdown
 dateCreated: 2025-06-19T10:27:40.620Z
@@ -12,7 +12,7 @@ dateCreated: 2025-06-19T10:27:40.620Z
 This section documents how I implemented HTTPS for my local Wiki.js instance to secure traffic within my home network.
 
 ## DNS
-To access Wiki.js via `https://wiki.raspi4`, I created a custom DNS record using my Pi-hole DNS server.
+To access Wiki.js via `https://wiki.raspi4:4000`, I created a custom DNS record using my Pi-hole DNS server.
 
 
 ## Self-Signed Certificate
