@@ -2,7 +2,7 @@
 title: Proxmox
 description: 
 published: true
-date: 2025-06-24T20:48:54.604Z
+date: 2025-06-24T21:19:57.130Z
 tags: 
 editor: markdown
 dateCreated: 2025-06-24T20:48:54.604Z
@@ -27,5 +27,5 @@ FQDN: proxmox01.local
 
 Webinterface: https://192.168.178.200:8006
 
-## VM Creation
-### ISO Upload
+## ISO Upload
+Screenshots are already uploaded
