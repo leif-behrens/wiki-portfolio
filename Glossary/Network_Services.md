@@ -2,7 +2,7 @@
 title: Network Services
 description: 
 published: true
-date: 2025-06-17T21:24:23.716Z
+date: 2025-06-24T08:23:36.629Z
 tags: 
 editor: markdown
 dateCreated: 2025-06-17T21:20:24.295Z
@@ -35,7 +35,7 @@ This section lists commonly used network-related services and protocols, along w
 | L2TP               | Layer 2 Tunneling Protocol | UDP / 1701                | ❌ (with IPsec: ✅) |
 | MGCP               | Media Gateway Control Protocol | UDP / 2427, 2727     | ❌          |
 | MQTT               | Message Queuing Telemetry Transport | TCP / 1883        | ❌ (TLS optional) |
-| NFS                | Network File System        | TCP / 2049                | ❌          |
+| [NFS](/Glossary/Network_Services/NFS) | Network File System        | TCP / 2049                | ❌          |
 | NNTP               | Network News Transfer Protocol | TCP / 119            | ❌          |
 | NTP                | Network Time Protocol      | UDP / 123                 | ❌          |
 | POP3               | Post Office Protocol v3    | TCP / 110                 | ❌          |
