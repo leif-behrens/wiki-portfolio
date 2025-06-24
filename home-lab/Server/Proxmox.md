@@ -2,7 +2,7 @@
 title: Proxmox
 description: 
 published: true
-date: 2025-06-24T21:19:57.130Z
+date: 2025-06-24T21:25:56.119Z
 tags: 
 editor: markdown
 dateCreated: 2025-06-24T20:48:54.604Z
