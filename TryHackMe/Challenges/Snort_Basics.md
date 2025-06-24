@@ -2,7 +2,7 @@
 title: Snort Challenge - The Basics
 description: 
 published: true
-date: 2025-06-24T07:41:56.242Z
+date: 2025-06-24T07:42:27.260Z
 tags: 
 editor: markdown
 dateCreated: 2025-06-24T07:37:36.347Z
@@ -673,7 +673,7 @@ The answer to this question is in the generated log as well:
 {.is-success}
 
 ---
-
+<br>
 
 ## Tools and commands used
 - snort
