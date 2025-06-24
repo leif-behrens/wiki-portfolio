@@ -2,7 +2,7 @@
 title: Snort Challenge - The Basics
 description: 
 published: true
-date: 2025-06-24T07:37:36.347Z
+date: 2025-06-24T07:41:56.242Z
 tags: 
 editor: markdown
 dateCreated: 2025-06-24T07:37:36.347Z
@@ -66,6 +66,7 @@ In the last question, a log file was created, which is read in with snort as fol
 {.is-success}
 
 ---
+<br>
 
 #### Question
 > Investigate the log file.<br>
@@ -77,10 +78,11 @@ In the last question, a log file was created, which is read in with snort as fol
 ![Result](/thm/challenges/1_writing_ids_rules_(http)_screenshot_4.png)
 
 #### Answer
-> >0x2E6B5384
+> 0x2E6B5384
 {.is-success}
 
 ---
+<br>
 
 #### Question
 > Investigate the log file.<br>
@@ -92,10 +94,11 @@ In the last question, a log file was created, which is read in with snort as fol
 ![Result](/thm/challenges/1_writing_ids_rules_(http)_screenshot_5.png)
 
 #### Answer
-> >0x36C21E28
+> 0x36C21E28
 {.is-success}
 
 ---
+<br>
 
 #### Question
 > Investigate the log file.<br>
@@ -111,6 +114,7 @@ In the last question, a log file was created, which is read in with snort as fol
 {.is-success}
 
 ---
+<br>
 
 #### Question
 > Investigate the log file.<br>
@@ -126,6 +130,7 @@ In the last question, a log file was created, which is read in with snort as fol
 {.is-success}
 
 ---
+<br>
 
 #### Question
 > Investigate the log file.<br>
@@ -141,6 +146,7 @@ In the last question, a log file was created, which is read in with snort as fol
 {.is-success}
 
 ---
+<br>
 
 ### Writing IDS Rules (FTP)
 #### Question
@@ -164,6 +170,7 @@ Then I executed the following command:
 {.is-success}
 
 ---
+<br>
 
 #### Question
 > Investigate the log file.<br>
@@ -187,6 +194,7 @@ Then I received the following output:
 {.is-success}
 
 ---
+<br>
 
 #### Question
 > **Clear the previous log and alarm files.** <br>
@@ -213,6 +221,7 @@ Then I received the following output:
 {.is-success}
 
 ---
+<br>
 
 #### Question
 > **Clear the previous log and alarm files.**<br>
@@ -237,6 +246,7 @@ Then I used the newly created rule on the given pcap file:
 {.is-success}
 
 ---
+<br>
 
 #### Question
 > **Clear the previous log and alarm files.**<br>
@@ -260,6 +270,7 @@ Then I used the newly created rule on the given pcap file:
 {.is-success}
 
 ---
+<br>
 
 #### Question
 > **Clear the previous log and alarm files.**<br>
@@ -284,6 +295,7 @@ Then I used the newly created rule on the given pcap file:
 {.is-success}
 
 ---
+<br>
 
 ### Writing IDS Rules (PNG)
 #### Question
@@ -314,6 +326,7 @@ Then I inspected the created log file:
 {.is-success}
 
 ---
+<br>
 
 #### Question
 > Deactivate/comment on the old rule.<br>
@@ -336,6 +349,7 @@ I inspected the created ```alert``` file and received the answer to the question
 {.is-success}
 
 ---
+<br>
 
 ### Writing IDS Rules (Torrent Metafile)
 #### Question
@@ -355,6 +369,7 @@ I couldn't find any magic number or file signature for torrent files. But torren
 {.is-success}
 
 ---
+<br>
 
 #### Question
 > Investigate the log/alarm files.<br>
@@ -374,6 +389,7 @@ In both packets where the alert was triggered you can see ```application/x-bitto
 {.is-success}
 
 ---
+<br>
 
 #### Question
 > Investigate the log/alarm files.<br>
@@ -389,6 +405,7 @@ The answer to this question was already provided in the previous question.
 {.is-success}
 
 ---
+<br>
 
 #### Question
 > Investigate the log/alarm files.<br>
@@ -404,6 +421,7 @@ The answer to this question is in the generated log as well:
 {.is-success}
 
 ---
+<br>
 
 ### Troubleshooting Rule Syntax Errors
 > **In this section, you need to fix the syntax errors in the given rule files.**<br>
@@ -421,6 +439,7 @@ The answer to this question is in the generated log as well:
 {.is-success}
 
 ---
+<br>
 
 #### Question
 > Fix the syntax error in **local-2.rules** file and make it work smoothly.<br>
@@ -433,6 +452,7 @@ The answer to this question is in the generated log as well:
 {.is-success}
 
 ---
+<br>
 
 #### Question
 > Fix the syntax error in **local-3.rules** file and make it work smoothly.<br>
@@ -445,6 +465,7 @@ The answer to this question is in the generated log as well:
 {.is-success}
 
 ---
+<br>
 
 #### Question
 > Fix the syntax error in **local-4.rules** file and make it work smoothly.<br>
@@ -455,6 +476,7 @@ The answer to this question is in the generated log as well:
 #### Answer
 > 90
 ---
+<br>
 
 #### Question
 > Fix the syntax error in **local-5.rules** file and make it work smoothly.<br>
@@ -467,6 +489,7 @@ The answer to this question is in the generated log as well:
 {.is-success}
 
 ---
+<br>
 
 #### Question
 > Fix the logical error in **local-6.rules** file and make it work smoothly to create alerts.<br>
@@ -479,6 +502,7 @@ The answer to this question is in the generated log as well:
 {.is-success}
 
 ---
+<br>
 
 #### Question
 > Fix the logical error in **local-7.rules** file and make it work smoothly to create alerts.<br>
@@ -491,6 +515,7 @@ The answer to this question is in the generated log as well:
 {.is-success}
 
 ---
+<br>
 
 ### Using External Rules (MS17-010)
 #### Question
@@ -504,6 +529,8 @@ The answer to this question is in the generated log as well:
 > 25154
 {.is-success}
 
+---
+<br>
 
 #### Question
 > Use local-1.rules empty file to write a new rule to detect payloads containing the "\IPC$" keyword.<br>
@@ -513,7 +540,10 @@ The answer to this question is in the generated log as well:
 
 #### Answer
 > 12
+{.is-success}
+
 ---
+<br>
 
 #### Question
 > Investigate the log/alarm files.<br>
@@ -525,8 +555,8 @@ The answer to this question is in the generated log as well:
 > \\\192.168.116.138\IPC$
 {.is-success}
 
-
 ---
+<br>
 
 #### Question
 > *What is the CVSS v2 score of the MS17-010 vulnerability?*
@@ -538,7 +568,7 @@ The answer to this question is in the generated log as well:
 {.is-success}
 
 ---
-
+<br>
 
 ### Using External Rules (Log4j)
 #### Question
@@ -553,6 +583,7 @@ The answer to this question is in the generated log as well:
 {.is-success}
 
 ---
+<br>
 
 #### Question
 > Investigate the log/alarm files.<br>
@@ -565,6 +596,7 @@ The answer to this question is in the generated log as well:
 {.is-success}
 
 ---
+<br>
 
 #### Question
 > Investigate the log/alarm files.<br>
@@ -576,8 +608,8 @@ The answer to this question is in the generated log as well:
 > 210037
 {.is-success}
 
-
 ---
+<br>
 
 #### Question
 > Use **local-1.rules** empty file to write a new rule to detect packet payloads **between 770 and 855 bytes**.<br>
@@ -590,6 +622,7 @@ The answer to this question is in the generated log as well:
 {.is-success}
 
 ---
+<br>
 
 #### Question
 > Investigate the log/alarm files.<br>
@@ -602,6 +635,7 @@ The answer to this question is in the generated log as well:
 {.is-success}
 
 ---
+<br>
 
 #### Question
 > Investigate the log/alarm files.<br>
@@ -614,6 +648,7 @@ The answer to this question is in the generated log as well:
 {.is-success}
 
 ---
+<br>
 
 #### Question
 > Investigate the log/alarm files.<br>
@@ -627,6 +662,7 @@ The answer to this question is in the generated log as well:
 {.is-success}
 
 ---
+<br>
 
 #### Question
 > *What is the CVSS v2 score of the Log4j vulnerability?*
