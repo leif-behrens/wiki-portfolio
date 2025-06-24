@@ -2,7 +2,7 @@
 title: Snort Challenge - The Basics
 description: 
 published: true
-date: 2025-06-24T07:42:27.260Z
+date: 2025-06-24T07:44:34.229Z
 tags: 
 editor: markdown
 dateCreated: 2025-06-24T07:37:36.347Z
@@ -15,16 +15,20 @@ dateCreated: 2025-06-24T07:37:36.347Z
 > **Difficulty**: ~~Unknown~~ | ~~Easy~~ | Medium | ~~Hard~~ <br>
 > **Reference**: https://tryhackme.com/room/snortchallenges1<br>
 
---- 
+---
+<br> 
 
 ## Summary
 In this challenge, different tasks had to be solved with Snort.
 
-
 ---
+<br>
 
 ## Tasks
 This challenge deals with the creation of Snort rules in different chapters.
+
+---
+<br>
 
 ### Writing IDS Rules (HTTP)
 #### Question
