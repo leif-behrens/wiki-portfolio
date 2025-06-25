@@ -2,7 +2,7 @@
 title: Proxmox
 description: 
 published: true
-date: 2025-06-25T16:26:21.383Z
+date: 2025-06-25T16:27:00.587Z
 tags: 
 editor: markdown
 dateCreated: 2025-06-24T20:48:54.604Z
@@ -12,8 +12,7 @@ dateCreated: 2025-06-24T20:48:54.604Z
 
 This is the central overview of my personal Proxmox VE homelab.  
 It documents the setup, configuration, and management of my system.
-
----
+<br>
 
 ## General Information
 | Property | Value |
@@ -26,7 +25,7 @@ It documents the setup, configuration, and management of my system.
 | Model | Raspberry Pi 4 Model B Rev 1.4 (8 GB) |
 | OS  | Proxmox GUI: 8.4.1 (2025/06/25)<br>Proxmox Kernel 6.8.12-11 (2025/06/25) |
 | Status | *Active* |
-
+<br>
 
 ## Structure
 
