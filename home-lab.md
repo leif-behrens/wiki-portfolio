@@ -2,7 +2,7 @@
 title: Home Lab
 description: 
 published: true
-date: 2025-06-20T07:42:10.214Z
+date: 2025-06-25T16:48:19.532Z
 tags: 
 editor: markdown
 dateCreated: 2025-06-20T07:42:10.214Z
@@ -14,7 +14,8 @@ This section documents the components, structure, and services of my personal ho
 It includes everything from hardware details and server configurations to infrastructure setups and internal services.
 
 ## Structure
-- [Server](/home-lab/Server) – Physical and virtual machines
+- [Server](/home-lab/Server) – Physical and virtual servers
 - [Services](/home-lab/Services) – Self-hosted tools and platforms
+- [Clients](/home-lab/Clients) - Physical and virtual Clients
 - [Infrastructure](/home-lab/Infrastructure) – Networking, storage, virtualization, DNS, etc.
 - [Monitoring](/home-lab/Monitoring) – System and service health monitoring
