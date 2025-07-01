@@ -2,7 +2,7 @@
 title: pfSense
 description: 
 published: true
-date: 2025-07-01T08:45:50.177Z
+date: 2025-07-01T12:38:17.738Z
 tags: 
 editor: markdown
 dateCreated: 2025-06-26T13:28:14.848Z
@@ -59,3 +59,6 @@ DHCP range: 10.10.4.100-10.10.4.199
 ## Overview
 INSERT IMAGE <create_pfsense_vm_21.png>
 I could also use VLANs but for now I leave it as is with different virtual network interfaces for each LAN.
+
+# Network Bridges
+Under Datacenter > proxmox01 > System > Network I created Linux Bridges for each LAN so that the Proxmox is handeling (routing) all the traffic between the networks. Each virtual NIC of the different LANs is their gateway. This way they are all segmented and separated.
