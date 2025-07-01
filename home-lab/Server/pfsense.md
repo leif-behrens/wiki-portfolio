@@ -2,7 +2,7 @@
 title: pfSense
 description: 
 published: true
-date: 2025-07-01T12:48:25.596Z
+date: 2025-07-01T13:40:19.560Z
 tags: 
 editor: markdown
 dateCreated: 2025-06-26T13:28:14.848Z
@@ -67,4 +67,14 @@ I could also use VLANs but for now I leave it as is with different virtual netwo
 # Network Bridges
 Under Datacenter > proxmox01 > System > Network I created Linux Bridges for each LAN so that the Proxmox is handeling (routing) all the traffic between the networks. Each virtual NIC of the different LANs is their gateway. This way they are all segmented and separated.
 INSERT IMAGE for CREATION OF THE BRIDGES
-After I created the bridges
+After I created the bridges I assigned the bridges to the according network interfaces of the pfSense. 
+(IMAGE)
+To configure the pfSense via the web console I temporarily assigned the NIC of the kali-01 VM to the vmbr1 (Admin LAN) so that I have access to the web console.
+
+# Configure pfSense
+I rebooted the VM, logged in again and checked the IP configuration of the kali-01 VM. 
+It received an IP address via DHCP (IMAGE)
+
+I logged in to the webinterface with the default credentials     
+Username: admin
+Password: pfsense 
