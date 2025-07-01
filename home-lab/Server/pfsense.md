@@ -2,7 +2,7 @@
 title: pfSense
 description: 
 published: true
-date: 2025-07-01T12:38:17.738Z
+date: 2025-07-01T12:48:05.764Z
 tags: 
 editor: markdown
 dateCreated: 2025-06-26T13:28:14.848Z
@@ -37,18 +37,21 @@ IPv4 (static): 10.10.1.1/24
 IPv6: DHCP6
 DHCP for the Clients: Activated
 DHCP range: 10.10.1.100-10.10.1.199
+MAC: BC:24:11:37:C9:28
 
 ## Corp-LAN
 IPv4 (static): 10.10.2.1/24
 IPv6: DHCP6
 DHCP for the Clients: Activated
 DHCP range: 10.10.2.100-10.10.2.199
+MAC: BC:24:11:6C:10:07
 
 ## Server-LAN
 IPv4 (static): 10.10.3.1/24
 IPv6: DHCP6
 DHCP for the Clients: Activated
 DHCP range: 10.10.3.100-10.10.3.199
+MAC: BC:24:11:C3:38:04
 
 ## Attack-LAN
 IPv4 (static): 10.10.4.1/24
@@ -62,3 +65,5 @@ I could also use VLANs but for now I leave it as is with different virtual netwo
 
 # Network Bridges
 Under Datacenter > proxmox01 > System > Network I created Linux Bridges for each LAN so that the Proxmox is handeling (routing) all the traffic between the networks. Each virtual NIC of the different LANs is their gateway. This way they are all segmented and separated.
+INSERT IMAGE for CREATION OF THE BRIDGES
+After I created the bridges
