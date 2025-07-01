@@ -2,7 +2,7 @@
 title: pfSense
 description: 
 published: true
-date: 2025-07-01T12:48:05.764Z
+date: 2025-07-01T12:48:25.596Z
 tags: 
 editor: markdown
 dateCreated: 2025-06-26T13:28:14.848Z
@@ -58,6 +58,7 @@ IPv4 (static): 10.10.4.1/24
 IPv6: DHCP6
 DHCP for the Clients: Activated
 DHCP range: 10.10.4.100-10.10.4.199
+MAC: BC:24:11:04:0A:E1
 
 ## Overview
 INSERT IMAGE <create_pfsense_vm_21.png>
