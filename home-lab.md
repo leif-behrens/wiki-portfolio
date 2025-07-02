@@ -2,7 +2,7 @@
 title: Home Lab
 description: 
 published: true
-date: 2025-06-25T16:48:19.532Z
+date: 2025-07-02T10:08:35.264Z
 tags: 
 editor: markdown
 dateCreated: 2025-06-20T07:42:10.214Z
@@ -12,6 +12,24 @@ dateCreated: 2025-06-20T07:42:10.214Z
 
 This section documents the components, structure, and services of my personal home lab environment.  
 It includes everything from hardware details and server configurations to infrastructure setups and internal services.
+
+# My walkthrough
+_TODO: Provide Links to the pages
+- Designed a fundamental, currently not finished, network infrastructur
+- Installation Proxmox
+- Download and upload images for the VMs
+- VM creation and initial configuration
+	-	Windows 10 VM
+	- Windows Server 2022
+  - Kali Linux
+  - Kali Purple
+  - Ubuntu Client
+  - Ubuntu Server
+  - pfSense
+	- SPICE
+
+
+
 
 ## Structure
 - [Server](/home-lab/Server) – Physical and virtual servers
