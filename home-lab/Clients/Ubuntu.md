@@ -2,14 +2,14 @@
 title: Ubuntu
 description: 
 published: true
-date: 2025-07-01T21:16:43.656Z
+date: 2025-07-02T11:24:03.865Z
 tags: 
 editor: markdown
 dateCreated: 2025-07-01T15:00:16.937Z
 ---
 
 # Ubuntu Client
-
+Ubuntu 24.04.02 LTS
 ubunut-clt-01
 User: leif
 Password: #A.....
