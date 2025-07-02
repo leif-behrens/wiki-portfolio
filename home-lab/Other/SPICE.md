@@ -2,7 +2,7 @@
 title: Optimization
 description: 
 published: true
-date: 2025-07-02T12:26:49.898Z
+date: 2025-07-02T13:30:13.970Z
 tags: 
 editor: markdown
 dateCreated: 2025-07-02T12:26:49.898Z
@@ -54,6 +54,11 @@ Then I checked the current systemctl status (Screnshot)
 And enabled the socket as well as started the service with `--now`:
 sudo systemctl enable --now spice-vdagentd.socket
 
+All bs
+
+I found this video:
+https://www.youtube.com/watch?v=MuEOQFGwOW4
+Installed virt viewer
 
 ### Open Console with SPICE
 Console > SPICE > open Downloaded file
