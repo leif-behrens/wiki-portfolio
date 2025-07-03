@@ -2,7 +2,7 @@
 title: Infrastructure
 description: 
 published: true
-date: 2025-07-03T13:07:13.831Z
+date: 2025-07-03T15:27:47.503Z
 tags: 
 editor: markdown
 dateCreated: 2025-07-03T12:58:27.515Z
@@ -13,5 +13,7 @@ dateCreated: 2025-07-03T12:58:27.515Z
 This section documents the network infrastructure, including diagrams, ip address tables etc.
 
 ## Sections
-- First approach
-- Final infrastructure
+1. [Network Designs](/home-lab/Infrastructure/Network_Designs)
+2. [IP-Addresses]
+3. [Firewall Configuration]
+To be continued
