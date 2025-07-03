@@ -2,7 +2,7 @@
 title: Iteration 2
 description: 
 published: true
-date: 2025-07-03T14:58:23.521Z
+date: 2025-07-03T15:10:24.490Z
 tags: 
 editor: markdown
 dateCreated: 2025-07-03T14:56:04.914Z
@@ -13,16 +13,20 @@ dateCreated: 2025-07-03T14:56:04.914Z
 > created on 2025-07-03
 
 ## Diagram
-![first_approach.png](/homelab/infrastructure/first_approach.png)
 
-## Idea
-- Flat LAN structure: no VLAN segments, each VM/group has its own subnet
-- pfSense as a central firewall/router
-- virtual NICs for each subnet
-- quick start: VMs are in separated net-bridges
+## Key Changes from [Iteration 1](/home-lab/Infrastructure/Network_Designs/Iteration_1)
+- Switched to OPNsense for the Corp-LAN for a better, more realistic and secure network design
+- VLAN trunk on a single bridge instead of multiple flat bridges and NICs
+- Dedicated DMZ network
+- Subnets re-aligned - all client/server groups are now segmented
 
-## Configuration
+## Interface & VLAN Configuration
 ### pfSense
+
+
+### OPNsense
+| Interface | Bridge/VLAN | IP Address | Subnet Mask (CIDR) |
+|---|---|---|---|
 
 
 ## Realization & Issues
