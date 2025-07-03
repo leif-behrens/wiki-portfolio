@@ -2,7 +2,7 @@
 title: Home Lab
 description: 
 published: true
-date: 2025-07-02T13:30:32.654Z
+date: 2025-07-03T10:04:57.704Z
 tags: 
 editor: markdown
 dateCreated: 2025-06-20T07:42:10.214Z
@@ -27,6 +27,7 @@ _TODO: Provide Links to the pages
   - Ubuntu Server
   - pfSense
 - SPICE for Desktop-VMs
+- Network Configuration
 
 
 
