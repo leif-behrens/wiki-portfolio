@@ -2,7 +2,7 @@
 title: 01-Installation
 description: 
 published: true
-date: 2025-07-03T14:11:29.993Z
+date: 2025-07-03T14:22:09.038Z
 tags: 
 editor: markdown
 dateCreated: 2025-07-03T13:54:54.240Z
@@ -12,7 +12,7 @@ dateCreated: 2025-07-03T13:54:54.240Z
 
 **Date:** 2025-06-28
 **pfSense-Version:** 2.7.2
-**Proxmox-Version:** 8.
+**Proxmox-Version:** 8.4.1
 
 ## Steps
 ### 1. Download ISO
@@ -37,5 +37,7 @@ I just followed the Proxmox VM creation wizard, enabled the *Qemu Agent* and ass
 
 The rest I left with the predefined values for now.
 
-3. NICs
+### 3. NIC creation
+According to my [network design](/home-lab/Infrastructure/Network_Designs/Iteration_1) I created three additional NICs for each segment in my home lab:
+![create_pfsense_vm_12.png](/homelab/server/pfsense/create_pfsense_vm_12.png)
 
