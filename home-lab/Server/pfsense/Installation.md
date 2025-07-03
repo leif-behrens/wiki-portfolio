@@ -2,7 +2,7 @@
 title: 01-Installation
 description: 
 published: true
-date: 2025-07-03T14:22:09.038Z
+date: 2025-07-03T14:24:15.942Z
 tags: 
 editor: markdown
 dateCreated: 2025-07-03T13:54:54.240Z
@@ -40,4 +40,4 @@ The rest I left with the predefined values for now.
 ### 3. NIC creation
 According to my [network design](/home-lab/Infrastructure/Network_Designs/Iteration_1) I created three additional NICs for each segment in my home lab:
 ![create_pfsense_vm_12.png](/homelab/server/pfsense/create_pfsense_vm_12.png)
-
+I haven't created the bridges for the different segments yet so for now I left it as is (vmbr0).
