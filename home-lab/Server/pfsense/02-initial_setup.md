@@ -1,8 +1,8 @@
 ---
-title: 02-Initial Setup
+title: Initial Setup
 description: 
 published: true
-date: 2025-07-03T14:30:00.572Z
+date: 2025-07-03T14:31:09.783Z
 tags: 
 editor: markdown
 dateCreated: 2025-07-03T14:30:00.572Z
