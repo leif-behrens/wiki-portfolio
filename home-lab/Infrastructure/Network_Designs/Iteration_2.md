@@ -2,7 +2,7 @@
 title: Iteration 2
 description: 
 published: true
-date: 2025-07-03T15:20:53.401Z
+date: 2025-07-03T15:22:35.750Z
 tags: 
 editor: markdown
 dateCreated: 2025-07-03T14:56:04.914Z
@@ -28,7 +28,7 @@ dateCreated: 2025-07-03T14:56:04.914Z
 | **LAN** | vmbr1 (untagged) | Point-to-Point link to OPNsense (WAN) | 10.10.10.1 | /30 |
 | **OPT2**  | vmbr2 | Attack-LAN | 192.168.50.1 | /24 |
 
-## OPNsense
+## OPNsense Interface Mapping
 | Interface | Bridge/VLAN | Role | IP Address | Subnet Mask |
 | --- | --- | --- | --- | --- |
 | **WAN** | vmbr1 | P2P from pfSense | 10.10.10.2 | /30 |
@@ -38,9 +38,4 @@ dateCreated: 2025-07-03T14:56:04.914Z
 | **VLAN30 (Domain)** | vlan30@vmbr0 | Domain-Services | 10.10.0.81 | /27 |
 | **VLAN40 (Apps)** | vlan40@vmbr0 | Application-LAN | 10.10.0.113 | /27 |
 | **VLAN99 (Mgmt)** | vlan99@vmbr0 | Management-LAN | 10.10.0.145 | /28 |
-
-
-## Realization & Issues
-My goal was to build a domain with a SOC (blue team) and an attack LAN from which I simulate attacks (as red team). But I realized it is not as structured and separated as I wanted it. I want this scenario to be more realistic and also want to learn and experiment as much as possible like networking in general, VLANs, DMZ, different firewalls (pfSense and OPNsense) etc. When I started to configure the pfSense I realized it so that I reevaluated my network design.
-
 
