@@ -2,7 +2,7 @@
 title: Iteration 1
 description: 
 published: true
-date: 2025-07-03T14:12:19.851Z
+date: 2025-07-03T14:58:46.682Z
 tags: 
 editor: markdown
 dateCreated: 2025-07-03T14:12:19.851Z
@@ -10,7 +10,7 @@ dateCreated: 2025-07-03T14:12:19.851Z
 
 # Iteration 1 - First Concept
 
-> created on 2025-06-28, **pfSense**-based
+> created on 2025-06-28
 
 ## Diagram
 ![first_approach.png](/homelab/infrastructure/first_approach.png)
