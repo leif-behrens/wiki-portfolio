@@ -2,7 +2,7 @@
 title: Initial Setup Walkthrough
 description: 
 published: true
-date: 2025-07-04T16:03:51.152Z
+date: 2025-07-04T16:04:36.001Z
 tags: 
 editor: markdown
 dateCreated: 2025-07-04T15:56:03.506Z
@@ -16,9 +16,9 @@ This walkthrough describes the chronological steps I took to build the home lab.
 
 ## Table of Contents
 
-1. [Network Design Draft](#1.-network-design-draft)  
-2. [Proxmox Installation](#2.-proxmox-installation)  
-3. [Image Management](#3.-Image-Management)  
+1. [Network Design Draft](#network-design-draft)  
+2. [Proxmox Installation](#proxmox-installation)  
+3. [Image Management](#Image-Management)  
 4. [VM Creation and Initial Configuration](#vm-creation-and-initial-configuration)  
    - [Windows 10](#windows-10)  
    - [Windows Server 2022](#windows-server-2022)  
