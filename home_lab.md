@@ -2,7 +2,7 @@
 title: Home Lab
 description: 
 published: true
-date: 2025-07-04T14:41:50.103Z
+date: 2025-07-04T14:52:04.079Z
 tags: 
 editor: markdown
 dateCreated: 2025-06-20T07:42:10.214Z
@@ -35,19 +35,20 @@ This section documents the components, structure, and services of my personal ho
 
 Each item links to a detailed subpage:
 
-- [Network Design Draft](/home-lab/Walkthrough/Network-Design)  
-- [Proxmox Installation](/home-lab/Walkthrough/Proxmox-Installation)  
-- [Image Management](/home-lab/Walkthrough/Image-Upload)  
-- [VM Creation & Initial Config](/home-lab/Walkthrough/VM-Creation)  
-  - [Windows 10](/home-lab/Walkthrough/VM-Creation/Windows-10)  
-  - [Windows Server 2022](/home-lab/Walkthrough/VM-Creation/Windows-Server-2022)  
-  - [Kali Linux](/home-lab/Walkthrough/VM-Creation/Kali-Linux)  
-  - [Kali Purple](/home-lab/Walkthrough/VM-Creation/Kali-Purple)  
-  - [Ubuntu Client](/home-lab/Walkthrough/VM-Creation/Ubuntu-Client)  
-  - [Ubuntu Server](/home-lab/Walkthrough/VM-Creation/Ubuntu-Server)  
-  - [pfSense](/home-lab/Walkthrough/VM-Creation/pfSense)  
-- [SPICE Setup for Desktops](/home-lab/Walkthrough/SPICE-Setup)  
-- [Network Configuration & Testing](/home-lab/Walkthrough/Network-Config)  
+- [Network Design Draft]
+- [Proxmox Installation]
+- [Image Management]
+- [VM Creation & Initial Config]
+  - [Windows 10]
+  - [Windows Server 2022]
+  - [Kali Linux]
+  - [Kali Purple]
+  - [Ubuntu Client]
+  - [Ubuntu Server]
+  - [pfSense]
+- [SPICE Setup for Desktops]
+- [Network Design Rework]
+- [OPNsense installation]
 
 ---
 
