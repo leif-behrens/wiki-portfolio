@@ -2,7 +2,7 @@
 title: Home
 description: 
 published: true
-date: 2025-07-04T13:23:17.563Z
+date: 2025-07-04T13:55:38.722Z
 tags: 
 editor: markdown
 dateCreated: 2025-06-17T21:46:38.516Z
@@ -18,19 +18,19 @@ It includes hands-on project setups, technical notes, service configurations, an
 
 ## 📁 Main Sections
 
-- 🏠 [Home-Lab](/home-lab)
+- 🏠 [Home-Lab](/homelab)
   Overview of my local infrastructure — servers, services, hardware and configuration.
 
-- 📖 [Glossary](/Glossary)  
+- 📖 [Glossary](/glossary)  
   Structured IT terminology across networking, DevOps, security, and systems.
 
-- 🧰 [Tools](/Tools)  
+- 🧰 [Tools](/tools)  
   Notes and usage references for CLI tools, scanners, and general-purpose utilities.
 
-- 🧠 [TryHackMe](/TryHackMe)  
+- 🧠 [TryHackMe](/tryhackme)  
   Walkthroughs, CTF notes, and learning documentation from the TryHackMe platform.
 
-- [Other Projects](/Other-Projects)
+- [Other Projects](/otherprojects)
 
 ---
 
