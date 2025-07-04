@@ -2,7 +2,7 @@
 title: Home
 description: 
 published: true
-date: 2025-07-04T14:20:23.248Z
+date: 2025-07-04T14:21:26.951Z
 tags: 
 editor: markdown
 dateCreated: 2025-06-17T21:46:38.516Z
@@ -18,7 +18,7 @@ It includes hands-on project setups, technical notes, service configurations, an
 
 ## 📁 Main Sections
 
-- 🏠 [Home-Lab](/homelab)
+- 🏠 [Home Lab](/home_lab)
   Overview of my local infrastructure — servers, services, hardware and configuration.
 
 - 📖 [Glossary](/glossary)  
@@ -30,7 +30,7 @@ It includes hands-on project setups, technical notes, service configurations, an
 - 🧠 [TryHackMe](/tryhackme)  
   Walkthroughs, CTF notes, and learning documentation from the TryHackMe platform.
 
-- [Other Projects](/otherprojects)
+- [Other Projects](/other_projects)
 
 ---
 
