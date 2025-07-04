@@ -2,7 +2,7 @@
 title: Initial Setup Walkthrough
 description: 
 published: true
-date: 2025-07-04T16:00:59.164Z
+date: 2025-07-04T16:02:21.411Z
 tags: 
 editor: markdown
 dateCreated: 2025-07-04T15:56:03.506Z
@@ -35,15 +35,19 @@ This walkthrough describes the chronological steps I took to build the home lab.
 
 
 
-### 1. Network Design Draft
+### Network Design Draft
 
 **Date:** YYYY-MM-DD  
 **Goal:** Erste Skizze des Subnetzes, VLAN-Aufteilung, IP-Plan  
 **Prerequisites:** Zeichensoftware (draw.io), Anbindung am Router  
 
 
-### 2. Proxmox Installation
+### 2. proxmox installation
 qwdqwdqwd
 
 
 ### 3. Image Management
+qdwwq
+
+
+### vm creation and initial configuration
