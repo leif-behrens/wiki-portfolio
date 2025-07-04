@@ -2,7 +2,7 @@
 title: Ubuntu
 description: 
 published: true
-date: 2025-07-02T11:24:03.865Z
+date: 2025-07-04T14:03:39.018Z
 tags: 
 editor: markdown
 dateCreated: 2025-07-01T15:00:16.937Z
