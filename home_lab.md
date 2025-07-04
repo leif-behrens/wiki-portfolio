@@ -2,7 +2,7 @@
 title: Home Lab
 description: 
 published: true
-date: 2025-07-04T15:33:43.957Z
+date: 2025-07-04T15:54:46.305Z
 tags: 
 editor: markdown
 dateCreated: 2025-06-20T07:42:10.214Z
@@ -33,6 +33,17 @@ It documents hardware details, server configurations, network designs, IP plans,
 
 ## Initial Setup Walkthrough
 
+Key stages of the build process—click to view full details:
+
+- [Network Design Draft](/home_lab/initial_setup#network-design-draft)  
+- [Proxmox Installation](/home_lab/initial_setup#proxmox-installation)  
+- [Image Management](/home_lab/initial_setup#image-management)  
+- [VM Creation & Initial Configuration](/home_lab/initial_setup#vm-creation-and-initial-configuration)  
+- [SPICE Setup for Desktops](/home_lab/initial_setup#spice-setup-for-desktops)  
+- [Network Design Rework](/home_lab/initial_setup#network-design-rework)  
+- [OPNsense Installation](/home_lab/initial_setup#opnsense-installation)
+
+<!---
 Each item links to its own page:
 
 - [Network Design Draft](#)  
@@ -49,6 +60,7 @@ Each item links to its own page:
 - [SPICE Setup for Desktops](#)  
 - [Network Design Rework](#)  
 - [OPNsense Installation](#) 
+-->
 
 ---
 
