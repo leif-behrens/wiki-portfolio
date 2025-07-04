@@ -2,7 +2,7 @@
 title: Home Lab
 description: 
 published: true
-date: 2025-07-04T15:09:44.544Z
+date: 2025-07-04T15:33:43.957Z
 tags: 
 editor: markdown
 dateCreated: 2025-06-20T07:42:10.214Z
@@ -35,20 +35,20 @@ It documents hardware details, server configurations, network designs, IP plans,
 
 Each item links to its own page:
 
-- [Network Design Draft]  
-- [Proxmox Installation]  
-- [Image Management]  
-- [VM Creation and Initial Configuration]  
-  - [Windows 10]  
-  - [Windows Server 2022]  
-  - [Kali Linux]  
-  - [Kali Purple]  
-  - [Ubuntu Client]  
-  - [Ubuntu Server]  
-  - [pfSense]  
-- [SPICE Setup for Desktops]  
-- [Network Design Rework]  
-- [OPNsense Installation]  
+- [Network Design Draft](#)  
+- [Proxmox Installation](#)  
+- [Image Management](#)  
+- [VM Creation and Initial Configuration](#)  
+  - [Windows 10](#)  
+  - [Windows Server 2022](#)  
+  - [Kali Linux](#)  
+  - [Kali Purple](#)  
+  - [Ubuntu Client](#)  
+  - [Ubuntu Server](#)  
+  - [pfSense](#)  
+- [SPICE Setup for Desktops](#)  
+- [Network Design Rework](#)  
+- [OPNsense Installation](#) 
 
 ---
 
