@@ -2,7 +2,7 @@
 title: HTTPS
 description: 
 published: true
-date: 2025-06-23T13:08:15.687Z
+date: 2025-07-04T15:00:18.023Z
 tags: 
 editor: markdown
 dateCreated: 2025-06-19T10:27:40.620Z
