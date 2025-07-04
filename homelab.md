@@ -2,7 +2,7 @@
 title: Home Lab
 description: 
 published: true
-date: 2025-07-03T15:42:21.848Z
+date: 2025-07-04T13:49:55.158Z
 tags: 
 editor: markdown
 dateCreated: 2025-06-20T07:42:10.214Z
@@ -22,11 +22,11 @@ This section documents the components, structure, and services of my personal ho
 ---
 
 ## Documentation Index
-- [Infrastructure](/home-lab/Infrastructure) – Networking, storage, virtualization, DNS, etc.
-- [Servers](/home-lab/Server) – Physical and virtual servers
-- [Clients](/home-lab/Clients) - Physical and virtual Clients
-- [Services](/home-lab/Services) – Self-hosted tools and platforms
-- [Monitoring](/home-lab/Monitoring) – System and service health monitoring
+- [Infrastructure](/homelab/infrastructure) – Networking, storage, virtualization, DNS, etc.
+- [Servers](/homelab/server) – Physical and virtual servers
+- [Clients](/homelab/clients) - Physical and virtual Clients
+- [Services](/homelab/services) – Self-hosted tools and platforms
+- [Monitoring](/homelab/monitoring) – System and service health monitoring
 - [Documentation]
 
 ---
