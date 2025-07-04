@@ -2,13 +2,13 @@
 title: Home Lab
 description: 
 published: true
-date: 2025-07-04T13:49:55.158Z
+date: 2025-07-04T14:22:24.735Z
 tags: 
 editor: markdown
 dateCreated: 2025-06-20T07:42:10.214Z
 ---
 
-# Home-Lab
+# Home Lab
 
 This home lab serves as a sandbox for building and managing a domain environment, conducting red- and blue-team exercises, simulating attacks, and experimenting with SOC operations.  
 This section documents the components, structure, and services of my personal home-lab environment. It includes everything from hardware details and server configurations to network designs, IP plans, and internal services. Below you’ll find:
