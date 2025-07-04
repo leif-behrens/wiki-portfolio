@@ -2,7 +2,7 @@
 title: Initial Setup Walkthrough
 description: 
 published: true
-date: 2025-07-04T15:57:44.302Z
+date: 2025-07-04T15:58:58.240Z
 tags: 
 editor: markdown
 dateCreated: 2025-07-04T15:56:03.506Z
@@ -31,3 +31,24 @@ This walkthrough describes the chronological steps I took to build the home lab.
 6. [Network Design Rework](#network-design-rework)  
 7. [OPNsense Installation](#opnsense-installation)  
 
+---
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+### 1. Network Design Draft
+
+**Date:** YYYY-MM-DD  
+**Goal:** Erste Skizze des Subnetzes, VLAN-Aufteilung, IP-Plan  
+**Prerequisites:** Zeichensoftware (draw.io), Anbindung am Router  
