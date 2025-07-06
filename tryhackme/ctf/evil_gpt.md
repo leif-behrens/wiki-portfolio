@@ -2,7 +2,7 @@
 title: Evil-GPT
 description: 
 published: true
-date: 2025-07-06T20:23:16.349Z
+date: 2025-07-06T20:23:51.813Z
 tags: 
 editor: markdown
 dateCreated: 2025-07-06T19:25:07.244Z
@@ -13,6 +13,7 @@ dateCreated: 2025-07-06T19:25:07.244Z
 > - Target IP: `10.10.146.126`
 > - Room: [Evil-GPT](https://tryhackme.com/room/hfb1evilgpt)
 > - Difficulty: Easy
+> - Date: 2025-07-06
 
 ---
 
