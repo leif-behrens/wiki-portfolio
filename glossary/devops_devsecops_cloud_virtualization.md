@@ -1,8 +1,8 @@
 ---
-title: DevOps / DevSecOps / Cloud / Virtualisierung
+title: DevOps / DevSecOps / Cloud / Virtualization
 description: 
 published: true
-date: 2025-07-07T17:18:40.443Z
+date: 2025-07-07T17:18:55.456Z
 tags: 
 editor: markdown
 dateCreated: 2025-06-17T21:40:34.006Z
