@@ -2,7 +2,7 @@
 title: Glossary
 description: 
 published: true
-date: 2025-07-07T17:13:05.428Z
+date: 2025-07-07T17:15:34.415Z
 tags: 
 editor: markdown
 dateCreated: 2025-06-17T15:11:07.644Z
@@ -25,7 +25,7 @@ Foundational and frequently used IT vocabulary: client/server, endpoint, uptime,
 
 ### ☁️ DevOps/DevSecOps & Cloud
 Terms from CI/CD, containers, cloud, DevSecOps, virtualization (Docker, K8s, Hypervisor, etc.). 
-<a class="glossary-link" href="/glossary/devops">Cloud & DevOps Glossary</a>
+<a class="glossary-link" href="/glossary/devops_devsecops_cloud_virtualization">Cloud & DevOps Glossary</a>
 <br>
 
 ### 🏗️ Network & Infrastructure
