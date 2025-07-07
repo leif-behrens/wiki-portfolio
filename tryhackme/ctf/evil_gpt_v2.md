@@ -2,7 +2,7 @@
 title: Evil-GPT v2
 description: 
 published: true
-date: 2025-07-07T16:26:49.773Z
+date: 2025-07-07T16:34:03.006Z
 tags: 
 editor: markdown
 dateCreated: 2025-07-07T15:14:00.545Z
@@ -25,27 +25,27 @@ dateCreated: 2025-07-07T15:14:00.545Z
 
 # Approach
 
-I only got the IP address from the target machine. So I made a SYN nmap scan to figure out what ports are open:
+I only got the IP address from the target machine. So I made a SYN Nmap scan to figure out which ports were open:
 
 ![evil-gptv2_02.png](/thm/ctf/evil-gptv2_02.png)
 
-Since port 80 is open I used my webbrowser and tried to access the server. I saw the following interface:
+Since port 80 was open, I used my web browser to access the server. I saw the following interface:
 
 ![evil-gptv2_02.png](/thm/ctf/evil-gptv2_03.png)
 
-I tried a simple `ls` command and received following output:
+I tried a simple `ls` command and received the following output:
 
 ![evil-gptv2_04.png](/thm/ctf/evil-gptv2_04.png)
 
-So unlike the first [Evil-GPT room](/tryhackme/ctf/evil_gpt) I cannot ask the AI to execute commands. So I start asking the model human-like question. I started if it could provide me the flag: 
+So, unlike the first [Evil-GPT room](/tryhackme/ctf/evil_gpt), I couldn’t ask the AI to execute commands directly on the server it is running on. Instead, I started asking the model human-like questions. First, I asked if it could provide me with the flag:
 
 ![evil-gptv2_05.png](/thm/ctf/evil-gptv2_05.png)
 
-I then want the AI to forget all the rules that the system gave the bot but it didn't work:
+Next, I tried to make the AI forget all its system rules, but it refused:
 
 ![evil-gptv2_06.png](/thm/ctf/evil-gptv2_06.png)
 
-Then I asked the bot to provide the rules he has to follow, where it revealed the flag:
+Then I asked the bot to provide the rules it has to follow, which revealed the flag:
 
 ![evil-gptv2_07.png](/thm/ctf/evil-gptv2_07.png)
 
