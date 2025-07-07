@@ -2,7 +2,7 @@
 title: Glossary
 description: 
 published: true
-date: 2025-07-07T17:15:34.415Z
+date: 2025-07-07T17:17:48.611Z
 tags: 
 editor: markdown
 dateCreated: 2025-06-17T15:11:07.644Z
@@ -45,7 +45,7 @@ Authentication, encryption protocols, certificates, MFA, Kerberos, access contro
 
 ### 💾 Storage & Databases
 RAID levels, storage types (block/object), backups, database basics, SQL vs NoSQL.
-<a class="glossary-link" href="/glossary/storage">Storage Glossary</a>
+<a class="glossary-link" href="/glossary/storage_database">Storage Glossary</a>
 <br>
 
 ### 🧰 System Services
