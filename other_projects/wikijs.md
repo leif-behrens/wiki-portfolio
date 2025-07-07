@@ -2,7 +2,7 @@
 title: Wiki.js
 description: 
 published: true
-date: 2025-06-19T18:22:15.401Z
+date: 2025-07-07T17:00:24.804Z
 tags: 
 editor: markdown
 dateCreated: 2025-06-18T10:26:51.405Z
@@ -15,11 +15,13 @@ Since I had already started working more with Docker and wanted to deepen my kno
 
 This section documents the entire implementation and configuration of my self-hosted Wiki.js
 
-- [Setup](/home-lab/Services/Wiki/Setup)
-- [Configure HTTPS](/home-lab/Services/Wiki/HTTPS)
-- [Hardening](./Hardening.md)
-- [GitHub Integration](./GitHub_Integration.md)
-- [Scripts](./Scripts.md)
+- [Setup](/other_projects/wikijs/setup)
+- [HTTPS](/other_projects/wikijs/https)
+<!--
+- [Hardening]
+- [GitHub Integration]
+- [Scripts]
+-->
 <br>
 
 # 🖥️ Technical Details
