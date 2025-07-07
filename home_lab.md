@@ -2,7 +2,7 @@
 title: Home Lab
 description: 
 published: true
-date: 2025-07-04T15:54:46.305Z
+date: 2025-07-07T17:38:54.563Z
 tags: 
 editor: markdown
 dateCreated: 2025-06-20T07:42:10.214Z
@@ -37,10 +37,10 @@ Key stages of the build process—click to view full details:
 
 - [Network Design Draft](/home_lab/initial_setup#network-design-draft)  
 - [Proxmox Installation](/home_lab/initial_setup#proxmox-installation)  
-- [Image Management](/home_lab/initial_setup#image-management)  
-- [VM Creation & Initial Configuration](/home_lab/initial_setup#vm-creation-and-initial-configuration)  
-- [SPICE Setup for Desktops](/home_lab/initial_setup#spice-setup-for-desktops)  
-- [Network Design Rework](/home_lab/initial_setup#network-design-rework)  
+- [Image Management](/home_lab/initial_setup#image-management)
+- [VM Creation & Initial Configuration](/home_lab/initial_setup#vm-creation-and-initial-configuration)
+- [SPICE Setup for Desktops](/home_lab/initial_setup#spice-setup-for-desktops)
+- [Network Design Rework](/home_lab/initial_setup#network-design-rework)
 - [OPNsense Installation](/home_lab/initial_setup#opnsense-installation)
 
 <!---
