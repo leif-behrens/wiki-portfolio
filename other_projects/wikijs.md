@@ -2,7 +2,7 @@
 title: Wiki.js
 description: 
 published: true
-date: 2025-07-07T17:00:42.695Z
+date: 2025-07-07T17:01:13.694Z
 tags: 
 editor: markdown
 dateCreated: 2025-06-18T10:26:51.405Z
@@ -17,6 +17,9 @@ This section documents the entire implementation and configuration of my self-ho
 
 - [Setup](/other_projects/wikijs/setup)
 - [HTTPS](/other_projects/wikijs/https)
+
+![loading-progress-bar.gif](/general/loading-progress-bar.gif)
+Site in progress...
 <!--
 - [Hardening]
 - [GitHub Integration]
