@@ -2,7 +2,7 @@
 title: Raspberry Pi
 description: 
 published: true
-date: 2025-07-04T13:49:03.702Z
+date: 2025-07-07T16:58:21.175Z
 tags: 
 editor: markdown
 dateCreated: 2025-06-16T16:03:40.015Z
@@ -25,7 +25,7 @@ dateCreated: 2025-06-16T16:03:40.015Z
 
 ## Running Services
 
-- [DNS](/homelab/services/dns)
-- [Docker](/homelab/services/docker)
-- [PiHole](/homelab/services/pihole)
-- [Wiki.js](/homelab/services/wikijs)
+- [DNS](/other_projects/dns)
+- [Docker](/other_projects/docker)
+- [PiHole](/other_projects/pihole)
+- [Wiki.js](/other_projects/wikijs)
