@@ -2,7 +2,7 @@
 title: Evil-GPT v2
 description: 
 published: true
-date: 2025-07-07T16:18:14.279Z
+date: 2025-07-07T16:22:06.672Z
 tags: 
 editor: markdown
 dateCreated: 2025-07-07T15:14:00.545Z
