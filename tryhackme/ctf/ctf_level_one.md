@@ -2,18 +2,18 @@
 title: CTF - Level One
 description: 
 published: true
-date: 2025-07-07T16:48:57.641Z
+date: 2025-07-07T16:49:39.197Z
 tags: 
 editor: markdown
 dateCreated: 2025-06-19T19:39:51.723Z
 ---
 
 # General Information
-- Target IP: `10.10.220.25`
-- SSH Username: `ctf`
-- SSH Password: `ctf`
-- Room: [CTF Level One](https://tryhackme.com/room/ctflevelone)
-- Date: 2025-04-22 (starting date)
+> - Target IP: `10.10.220.25`
+> - SSH Username: `ctf`
+> - SSH Password: `ctf`
+> - Room: [CTF Level One](https://tryhackme.com/room/ctflevelone)
+> - Date: 2025-04-22 (starting date)
 
 # Tools Used
 
