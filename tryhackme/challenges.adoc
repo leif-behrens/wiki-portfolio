@@ -1,5 +1,0 @@
-== TryHackMe
-
-In this folder you can see all my TryHackMe Challenges Documentations.
-
-link:/TryHackMeChallenges/Snort[Snort]
