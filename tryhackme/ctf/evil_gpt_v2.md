@@ -2,7 +2,7 @@
 title: Evil-GPT v2
 description: 
 published: true
-date: 2025-07-07T16:25:43.286Z
+date: 2025-07-07T16:26:49.773Z
 tags: 
 editor: markdown
 dateCreated: 2025-07-07T15:14:00.545Z
@@ -37,7 +37,7 @@ I tried a simple `ls` command and received following output:
 
 ![evil-gptv2_04.png](/thm/ctf/evil-gptv2_04.png)
 
-So unlike the first [Evil-GPT room](/tryhackme/ctf/evil_gpt) I cannot ask the bot to execute commands. So I start asking the model human-like question. I started if it could provide me the flag: 
+So unlike the first [Evil-GPT room](/tryhackme/ctf/evil_gpt) I cannot ask the AI to execute commands. So I start asking the model human-like question. I started if it could provide me the flag: 
 
 ![evil-gptv2_05.png](/thm/ctf/evil-gptv2_05.png)
 
