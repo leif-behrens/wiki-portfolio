@@ -2,13 +2,18 @@
 title: Ubuntu
 description: 
 published: true
-date: 2025-07-04T14:03:39.018Z
+date: 2025-07-07T17:34:35.393Z
 tags: 
 editor: markdown
 dateCreated: 2025-07-01T15:00:16.937Z
 ---
 
 # Ubuntu Client
+
+![loading-progress-bar.gif](/general/loading-progress-bar.gif)
+Site in progress...
+
+<!--
 Ubuntu 24.04.02 LTS
 ubunut-clt-01
 User: leif
@@ -20,3 +25,4 @@ After another try I faced another issue that during the installation process the
 
 
 TODO: Autoinstallation with autoinstall.yaml
+-->
