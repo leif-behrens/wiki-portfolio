@@ -2,7 +2,7 @@
 title: Initial Setup Walkthrough
 description: 
 published: true
-date: 2025-07-04T16:08:20.214Z
+date: 2025-07-07T17:22:14.907Z
 tags: 
 editor: markdown
 dateCreated: 2025-07-04T15:56:03.506Z
@@ -26,7 +26,7 @@ This walkthrough describes the chronological steps I took to build the home lab.
    - [Kali Purple](#kali-purple)  
    - [Ubuntu Client](#ubuntu-client)  
    - [Ubuntu Server](#ubuntu-server)  
-   - [pfSense](#pfsense)  
+   - [pfSense](#pfsense)
 5. [SPICE Setup for Desktops](#spice-setup-for-desktops)  
 6. [Network Design Rework](#network-design-rework)  
 7. [OPNsense Installation](#opnsense-installation)  
