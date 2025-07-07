@@ -2,7 +2,7 @@
 title: pfSense
 description: 
 published: true
-date: 2025-07-01T13:40:19.560Z
+date: 2025-07-07T17:25:02.244Z
 tags: 
 editor: markdown
 dateCreated: 2025-06-26T13:28:14.848Z
@@ -10,6 +10,10 @@ dateCreated: 2025-06-26T13:28:14.848Z
 
 # pfSense
 
+![loading-progress-bar.gif](/general/loading-progress-bar.gif)
+Site in progress...
+
+<!--
 # Download
 https://atxfiles.netgate.com/mirror/downloads/ so I didnt have to create an account.
 Checked the hashes and wanted to etract the gzip file with the windows built-in unpacker. I received an Directory instead of the iso. I figured that maybe a dedicated program like 7zip is a better option for unpacking archived files and it worked.
@@ -78,3 +82,4 @@ It received an IP address via DHCP (IMAGE)
 I logged in to the webinterface with the default credentials     
 Username: admin
 Password: pfsense 
+-->
