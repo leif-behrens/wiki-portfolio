@@ -2,7 +2,7 @@
 title: Wiki.js
 description: 
 published: true
-date: 2025-07-07T17:00:24.804Z
+date: 2025-07-07T17:00:42.695Z
 tags: 
 editor: markdown
 dateCreated: 2025-06-18T10:26:51.405Z
@@ -21,7 +21,6 @@ This section documents the entire implementation and configuration of my self-ho
 - [Hardening]
 - [GitHub Integration]
 - [Scripts]
--->
 <br>
 
 # 🖥️ Technical Details
@@ -59,4 +58,4 @@ This section documents the entire implementation and configuration of my self-ho
 
 - Struktur im Git (Glossar, Home, Tools...)
 - Templates, CSS-Anpassung, Tabellen-Sortierung
-
+-->
