@@ -2,7 +2,7 @@
 title: Proxmox - Installation
 description: 
 published: true
-date: 2025-06-25T16:28:49.539Z
+date: 2025-07-07T17:26:25.849Z
 tags: 
 editor: markdown
 dateCreated: 2025-06-25T16:28:49.538Z
@@ -10,6 +10,10 @@ dateCreated: 2025-06-25T16:28:49.538Z
 
 # Proxmox - Installation
 
+![loading-progress-bar.gif](/general/loading-progress-bar.gif)
+Site in progress...
+
+<!--
 USB drive with rufus and the downloaded ISO of Proxmox (insert link here). 
 
 TODO
@@ -26,3 +30,4 @@ Webinterface: https://192.168.178.200:8006
 ## ISO Upload
 Screenshots are already uploaded
 virtioIO Drivers are drivers for the windows vms (https://pve.proxmox.com/wiki/Windows_VirtIO_Drivers)
+-->
