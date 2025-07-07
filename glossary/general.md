@@ -2,13 +2,17 @@
 title: General Terms
 description: 
 published: true
-date: 2025-06-17T21:44:41.264Z
+date: 2025-07-07T17:16:29.005Z
 tags: 
 editor: markdown
 dateCreated: 2025-06-17T21:44:30.150Z
 ---
 
-# Header
+# General Terms
+![loading-progress-bar.gif](/general/loading-progress-bar.gif)
+Site in progress...
+
+<!--
 Your content here
 
 _TODOS
@@ -20,3 +24,4 @@ Patch / Hotfix
 Uptime / SLA
 RFC
 Root Cause / RCA
+-->
