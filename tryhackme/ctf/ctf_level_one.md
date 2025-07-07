@@ -2,7 +2,7 @@
 title: CTF - Level One
 description: 
 published: true
-date: 2025-06-20T08:08:02.013Z
+date: 2025-07-07T16:48:57.641Z
 tags: 
 editor: markdown
 dateCreated: 2025-06-19T19:39:51.723Z
@@ -13,6 +13,7 @@ dateCreated: 2025-06-19T19:39:51.723Z
 - SSH Username: `ctf`
 - SSH Password: `ctf`
 - Room: [CTF Level One](https://tryhackme.com/room/ctflevelone)
+- Date: 2025-04-22 (starting date)
 
 # Tools Used
 
