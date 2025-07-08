@@ -2,7 +2,7 @@
 title: Initial Setup Walkthrough
 description: 
 published: true
-date: 2025-07-08T16:21:51.848Z
+date: 2025-07-08T16:27:37.364Z
 tags: 
 editor: markdown
 dateCreated: 2025-07-04T15:56:03.506Z
@@ -102,4 +102,4 @@ Then I reconfigured the Attack LAN interface and the Point2Point Interface to th
 No IPv6, no DHCP for LAN
 No IPv6, DHCP for OPT1 (192.168.50.100-200)
 
-TODO: Configure OPT1 Interface via Web GUI.
+TODO: Configure OPT1 Interface via Web GUI. http://192.168.50.1
