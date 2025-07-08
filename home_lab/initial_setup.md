@@ -2,7 +2,7 @@
 title: Initial Setup Walkthrough
 description: 
 published: true
-date: 2025-07-07T17:22:14.907Z
+date: 2025-07-08T15:18:53.794Z
 tags: 
 editor: markdown
 dateCreated: 2025-07-04T15:56:03.506Z
@@ -29,11 +29,11 @@ This walkthrough describes the chronological steps I took to build the home lab.
    - [pfSense](#pfsense)
 5. [SPICE Setup for Desktops](#spice-setup-for-desktops)  
 6. [Network Design Rework](#network-design-rework)  
-7. [OPNsense Installation](#opnsense-installation)  
+7. [OPNsense Installation](#opnsense-installation)
+8. Reconfigure pfSense
+9. 
 
 ---
-
-
 
 ### 1. Network Design Draft {#network-design-draft}
 
@@ -50,5 +50,38 @@ PLACEHOLDER
 PLACEHOLDER
 
 
-### VM Creation and Initial Configuration {#vm-creation-and-initial-configuration}
+### 4. VM Creation and Initial Configuration {#vm-creation-and-initial-configuration}
+PLACEHOLDER
+
+#### Windows 10 {#windows-10}
+PLACEHOLDER
+
+#### Windows Server 2022 {#windows-server-2022}
+PLACEHOLDER
+
+#### Kali Linux {#kali-linux}
+PLACEHOLDER
+
+#### Kali Purple {#kali-purple}
+PLACEHOLDER
+
+#### Ubuntu Client {#ubuntu-client}
+PLACEHOLDER
+
+#### Ubuntu Server {#ubuntu-server}
+PLACEHOLDER
+
+#### pfSense {#pfsense}
+PLACEHOLDER
+
+### 5. SPICE Setup for Desktops {#spice-setup-for-desktops}
+PLACEHOLDER
+
+### 6. Network Design Rework {#network-design-rework}
+PLACEHOLDER
+
+### 7. OPNsense Installation {#opnsense-installation}
+PLACEHOLDER
+
+### 8. Reconfigure pfSense {#reconfigure-pfsense}
 PLACEHOLDER
