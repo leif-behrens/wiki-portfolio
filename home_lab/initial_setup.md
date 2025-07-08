@@ -2,7 +2,7 @@
 title: Initial Setup Walkthrough
 description: 
 published: true
-date: 2025-07-08T16:27:37.364Z
+date: 2025-07-08T17:06:08.246Z
 tags: 
 editor: markdown
 dateCreated: 2025-07-04T15:56:03.506Z
@@ -31,8 +31,8 @@ This walkthrough describes the chronological steps I took to build the home lab.
 6. [Network Design Rework](#network-design-rework)  
 7. [OPNsense Installation](#opnsense-installation)
 8. [Reconfigure Proxmox and pfSense](#reconfigure)
-	- [Proxmox](#proxmox)
   - [pfSense](#pfsense)
+	- [Proxmox](#proxmox)
 9. 
 
 ---
@@ -86,8 +86,6 @@ PLACEHOLDER
 PLACEHOLDER
 
 ### 8. Reconfigure Proxmox and pfSense {#reconfigure}
-#### Proxmox {#proxmox}
-I removed the network bridges vmbr1-vmbr5
 
 #### pfSense {#pfSense}
 According to the current network diagram I removed the network device net3 and net4.
@@ -103,3 +101,13 @@ No IPv6, no DHCP for LAN
 No IPv6, DHCP for OPT1 (192.168.50.100-200)
 
 TODO: Configure OPT1 Interface via Web GUI. http://192.168.50.1
+
+#### Proxmox {#proxmox}
+I removed the network bridges vmbr1-vmbr5 and created two additional Linux bridges: vmbr1 (P2P-Link-LAN) and vmbr2 (Attack-LAN):
+
+![bridges_pfsense.png](/homelab/infrastructure/bridges_pfsense.png)
+
+Then I assigned the NICs of the pfSense to the bridges:
+
+![assign_bridges_pfsense.png](/homelab/infrastructure/assign_bridges_pfsense.png)
+
