@@ -2,7 +2,7 @@
 title: Initial Setup Walkthrough
 description: 
 published: true
-date: 2025-07-08T15:18:53.794Z
+date: 2025-07-08T15:19:47.511Z
 tags: 
 editor: markdown
 dateCreated: 2025-07-04T15:56:03.506Z
@@ -30,7 +30,7 @@ This walkthrough describes the chronological steps I took to build the home lab.
 5. [SPICE Setup for Desktops](#spice-setup-for-desktops)  
 6. [Network Design Rework](#network-design-rework)  
 7. [OPNsense Installation](#opnsense-installation)
-8. Reconfigure pfSense
+8. [reconfigure pfSense](#reconfigure-pfsense)
 9. 
 
 ---
