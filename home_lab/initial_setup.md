@@ -2,7 +2,7 @@
 title: Initial Setup Walkthrough
 description: 
 published: true
-date: 2025-07-08T15:19:47.511Z
+date: 2025-07-08T15:54:59.829Z
 tags: 
 editor: markdown
 dateCreated: 2025-07-04T15:56:03.506Z
@@ -30,7 +30,7 @@ This walkthrough describes the chronological steps I took to build the home lab.
 5. [SPICE Setup for Desktops](#spice-setup-for-desktops)  
 6. [Network Design Rework](#network-design-rework)  
 7. [OPNsense Installation](#opnsense-installation)
-8. [reconfigure pfSense](#reconfigure-pfsense)
+8. [Reconfigure Proxmox and pfSense](#reconfigure-proxmox-pfsense)
 9. 
 
 ---
@@ -83,5 +83,6 @@ PLACEHOLDER
 ### 7. OPNsense Installation {#opnsense-installation}
 PLACEHOLDER
 
-### 8. Reconfigure pfSense {#reconfigure-pfsense}
-PLACEHOLDER
+### 8. Reconfigure Proxmox and pfSense {#reconfigure-proxmox-pfsense}
+According to the current network diagram I removed the network device net3 and net4.
+Then I reconfigured the Attack LAN interface and the Point2Point Interface to the OPNsense.
