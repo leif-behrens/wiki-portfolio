@@ -2,7 +2,7 @@
 title: Migration to my public server
 description: 
 published: true
-date: 2025-07-09T10:55:19.876Z
+date: 2025-07-09T11:42:37.021Z
 tags: 
 editor: markdown
 dateCreated: 2025-07-09T10:37:11.214Z
@@ -35,3 +35,6 @@ VirtualHost
   RequestHeader set X-Forwarded-Proto "https"
 </VirtualHost>
 ```
+
+## User creation
+Created user wiki
