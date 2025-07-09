@@ -2,7 +2,7 @@
 title: Wiki.js
 description: 
 published: true
-date: 2025-07-07T17:01:13.694Z
+date: 2025-07-09T10:36:08.821Z
 tags: 
 editor: markdown
 dateCreated: 2025-06-18T10:26:51.405Z
@@ -11,12 +11,12 @@ dateCreated: 2025-06-18T10:26:51.405Z
 # Wiki.js – Self-hosted Knowledge Platform
 I wanted a way to document my technical projects and create a personal knowledge base. Someone recommended Wiki.js and found that it supports various self-hosting methods, including Docker.
 
-Since I had already started working more with Docker and wanted to deepen my knowledge, I decided to run Wiki.js locally on my Raspberry Pi using containers.
-
 This section documents the entire implementation and configuration of my self-hosted Wiki.js
 
 - [Setup](/other_projects/wikijs/setup)
 - [HTTPS](/other_projects/wikijs/https)
+- [GitHub Integration](other_projects/wikijs/github)
+- [Migration to my public server](other_projects/wikijs/migration_public)
 
 ![loading-progress-bar.gif](/general/loading-progress-bar.gif)
 Site in progress...
