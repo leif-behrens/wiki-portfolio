@@ -2,7 +2,7 @@
 title: Capture The Flag (CTF)
 description: 
 published: true
-date: 2025-07-07T17:06:49.426Z
+date: 2025-07-10T12:12:47.664Z
 tags: 
 editor: markdown
 dateCreated: 2025-06-20T07:22:41.508Z
@@ -16,3 +16,4 @@ Each subpage includes step-by-step walkthroughs, tools used, and captured flags.
 - [CTF - Level One](/tryhackme/ctf/ctf_level_one)
 - [Evil-GPT](/tryhackme/ctf/evil_gpt)
 - [Evil-GPT v2](/tryhackme/ctf/evil_gpt_v2)
+- [Lo-Fi](/tryhackme/ctf/lofi)
