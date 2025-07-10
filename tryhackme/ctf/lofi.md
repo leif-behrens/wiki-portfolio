@@ -2,7 +2,7 @@
 title: Lo-Fi
 description: 
 published: true
-date: 2025-07-10T12:21:52.856Z
+date: 2025-07-10T12:38:35.412Z
 tags: 
 editor: markdown
 dateCreated: 2025-07-10T12:21:52.856Z
@@ -12,7 +12,7 @@ dateCreated: 2025-07-10T12:21:52.856Z
 
 # General Information
 
-> - Target IP: `10.10.84.219`
+> - Target IP: `10.10.14.132`
 > - Room: [Lo-Fi](https://tryhackme.com/room/lofi)
 > - Difficulty: Easy
 > - Date: 2025-07-10
@@ -25,14 +25,39 @@ dateCreated: 2025-07-10T12:21:52.856Z
 ---
 
 # Approach
-I navigated to the page via firefox:
+
+I navigated to the page using Firefox:
 
 ![lofi_2.png](/thm/ctf/lofi_2.png)
 
-The task already provides the information, it might have to do something with a Path Traversal attack.
-I clicked on one of the hyperlinks on the sidebar ("Coffee") and looked at the URL query.
-`?page=coffee.php`
-So the website accessed the file `coffee.php` on its file system. By default the 
+The task description suggests a path traversal attack. I clicked one of the sidebar links ("Coffee") and examined the URL query:
 
-/var/www/html/**\<website content>**
+`?page=coffee.php`
+
+This indicates the site loads the file coffee.php from its file system. On Linux, web pages are typically stored under:
+
+`
+/var/www/html/<website content>
+`
+
+To reach the filesystem root, I modified the query to:
+`?page=../../../flag.txt`. 
+
+I guessed the file name `flag.txt` because that is commonly used in TryHackMe CTF challenges.
+
+| Command | Path |
+| --- | --- |
+|../ | /var/www |
+| ../../ | /var |
+| ../../../ | / |
+
+I then retrieved the flag:
+
+![lofi_3.png](/thm/ctf/lofi_3.png)
+
+I must admit, I thought it would be more challenging and was surprised to find the flag so quickly. But that was the point of this challenge.
+
+> Climb the filesystem to find the flag!
+> flag{e4478e0eab69bd642b8238765dcb7d18}\
+{.is-success}
 
