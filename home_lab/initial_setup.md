@@ -2,7 +2,7 @@
 title: Initial Setup Walkthrough
 description: 
 published: true
-date: 2025-07-08T17:06:08.246Z
+date: 2025-07-10T17:39:16.146Z
 tags: 
 editor: markdown
 dateCreated: 2025-07-04T15:56:03.506Z
@@ -31,7 +31,7 @@ This walkthrough describes the chronological steps I took to build the home lab.
 6. [Network Design Rework](#network-design-rework)  
 7. [OPNsense Installation](#opnsense-installation)
 8. [Reconfigure Proxmox and pfSense](#reconfigure)
-  - [pfSense](#pfsense)
+	- [pfSense](#pfsense)
 	- [Proxmox](#proxmox)
 9. 
 
