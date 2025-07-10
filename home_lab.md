@@ -2,7 +2,7 @@
 title: Home Lab
 description: 
 published: true
-date: 2025-07-07T17:38:54.563Z
+date: 2025-07-10T12:46:15.104Z
 tags: 
 editor: markdown
 dateCreated: 2025-06-20T07:42:10.214Z
@@ -33,7 +33,7 @@ It documents hardware details, server configurations, network designs, IP plans,
 
 ## Initial Setup Walkthrough
 
-Key stages of the build process—click to view full details:
+Key stages of the build process. Click to view full details:
 
 - [Network Design Draft](/home_lab/initial_setup#network-design-draft)  
 - [Proxmox Installation](/home_lab/initial_setup#proxmox-installation)  
