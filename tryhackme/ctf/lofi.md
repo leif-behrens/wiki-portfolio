@@ -2,7 +2,7 @@
 title: Lo-Fi
 description: 
 published: true
-date: 2025-07-10T12:38:35.412Z
+date: 2025-07-10T12:42:01.776Z
 tags: 
 editor: markdown
 dateCreated: 2025-07-10T12:21:52.856Z
@@ -41,6 +41,7 @@ This indicates the site loads the file coffee.php from its file system. On Linux
 `
 
 To reach the filesystem root, I modified the query to:
+
 `?page=../../../flag.txt`. 
 
 I guessed the file name `flag.txt` because that is commonly used in TryHackMe CTF challenges.
