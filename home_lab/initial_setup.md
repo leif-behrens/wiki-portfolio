@@ -2,7 +2,7 @@
 title: Initial Setup Walkthrough
 description: 
 published: true
-date: 2025-07-11T20:28:59.824Z
+date: 2025-07-11T20:32:38.004Z
 tags: 
 editor: markdown
 dateCreated: 2025-07-04T15:56:03.506Z
@@ -150,7 +150,4 @@ I logged in to the management interface with firefox:
 
 https://10.10.0.145
 
-After the Login process I realized, that I use the live version and my config will be erased after reboot. After a little research on the [documentation](https://docs.opnsense.org/manual/install.html#installation-instructions) of opnsense I found that I have to login via ssh with the user **installer** and password **opnsense** to start the installation process. Then I followed the installation wizard and left everything at default. After installation I left the root password as is for now and change it later.
-
-To avoid configuration again from scratch I downloaded the configuration in the opnsense webinterface (System->Configuration->Backups->Download->Download configuration)
-
+After the Login process I realized, that I use the live version and my config will be erased after reboot. After a little research on the [documentation](https://docs.opnsense.org/manual/install.html#installation-instructions) of opnsense I found that I have to login via ssh with the user **installer** and password **opnsense** to start the installation process. Then I followed the installation wizard and left everything at default. After installation I left the root password as is for now and change it later. Before the installation and to avoid configuration again from scratch I downloaded the configuration in the opnsense webinterface (System->Configuration->Backups->Download->Download configuration) because I wasn't sure if the installation from the live version to disk would erase the config.
