@@ -2,7 +2,7 @@
 title: Initial Setup Walkthrough
 description: 
 published: true
-date: 2025-07-11T14:40:24.158Z
+date: 2025-07-11T15:28:25.983Z
 tags: 
 editor: markdown
 dateCreated: 2025-07-04T15:56:03.506Z
@@ -143,4 +143,14 @@ WAN: 10.10.10.2/30, Upstream gateway address: 10.10.10.1 (pfSense), gateway name
 Then I enabled *VLAN aware* on vmbr3 and for to access the web GUI via the management VLAN I set the bridge of the ubuntu-clt-01 machine to vmbr3 and also set the VLAN Tag to 99:
 
 ![ubuntu_clt_management_vlan.png](/homelab/infrastructure/ubuntu_clt_management_vlan.png)
+
+After starting the ubuntu machine, I pinged the OPNsense and got a response, so its reachable. 
+
+I logged in to the management interface with firefox:
+
+https://10.10.0.145
+
+After the Login process I realized, that I use the live version and my config will be erased after reboot. After a little research on the documentation of opnsense I found that I have to login via ssh with the user **installer** and password **opnsense** to start the installation process. Then I followed the installation wizard and left everything at default. After installation I left the root password as is for now and change it later.
+
+To avoid configuration again from scratch I downloaded the configuration in the opnsense webinterface (System->Configuration->Backups->Download->Download configuration)
 
