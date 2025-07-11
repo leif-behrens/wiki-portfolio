@@ -2,7 +2,7 @@
 title: Initial Setup Walkthrough
 description: 
 published: true
-date: 2025-07-11T10:53:07.651Z
+date: 2025-07-11T11:33:46.150Z
 tags: 
 editor: markdown
 dateCreated: 2025-07-04T15:56:03.506Z
@@ -116,7 +116,7 @@ Then I assigned the NICs of the pfSense to the bridges:
 ### OPNsense Initial Configuration {#opnsense-initial-configuration}
 I created a new network device (net1) and assigned it to vmbr3 (Corp-LAN) and assigned the network device net0 to vmbr1 (P2P-Link-LAN):
 
-![assign_bridges_opnsense.png](/assign_bridges_opnsense.png)
+![assign_bridges_opnsense.png](/homelab/infrastructure/assign_bridges_opnsense.png)
 
 I rebooted the OPNsense to make sure the new NICs are recognized (I am not sure if it was necessary but still I did it).
 
@@ -128,6 +128,8 @@ VLAN tags: 99 (Management), 10 (Admin), 20 (Client), 30 (Domain Services), 40 (A
 
 Then I assigned the WAN, LAN and OPT interfaces as follows:
 
-![opnsense_vlan_config.png](/opnsense_vlan_config.png)
+![opnsense_vlan_config.png](/homelab/infrastructure/opnsense_vlan_config.png)
 
-
+After the assignment of the interfaces I configured the IP addresses of each interface:
+LAN: 10.10.0.80/27, IPv6 and DHCP disabled
+OPT1: 10.10.
