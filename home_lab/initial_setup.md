@@ -2,7 +2,7 @@
 title: Initial Setup Walkthrough
 description: 
 published: true
-date: 2025-07-11T21:17:28.318Z
+date: 2025-07-11T22:25:40.395Z
 tags: 
 editor: markdown
 dateCreated: 2025-07-04T15:56:03.506Z
@@ -155,6 +155,16 @@ After the Login process I realized, that I use the live version and my config wi
 I forgot to implement the DMZ. So I created a new Bridge (vmbr4) in proxmox and a NIC on the OPNsense, which I assigned to the vmbr4. 
 In the web interface I assigned the new NIC (vtnet2) to OPT5, enabled the interface, set the IP address to 172.16.10.1, enabled DHCPv4
 
-## Hardening and further configuration
+I renamed the description of the interfaces for a better overview:
+
+![opnsense_interface_description.png](/homelab/infrastructure/opnsense_interface_description.png)
+
+## Hardening
 In the web interface I set a new root password. #A..
-I just want the management vlan to be able to access the web GUI
+I just want the management vlan to be able to access the web GUI.
+System -> Settings -> Administration -> Web GUI -> Listen Interfaces: VLAN99
+
+Secure Shell -> Listen Interfaces: VLAN99
+
+## Firewall Rules
+
