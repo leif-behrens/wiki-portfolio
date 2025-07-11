@@ -2,7 +2,7 @@
 title: Initial Setup Walkthrough
 description: 
 published: true
-date: 2025-07-11T12:43:36.437Z
+date: 2025-07-11T13:31:49.778Z
 tags: 
 editor: markdown
 dateCreated: 2025-07-04T15:56:03.506Z
@@ -136,3 +136,10 @@ OPT1: 10.10.0.129/28
 OPT2: 10.10.0.1/26
 OPT3: 10.10.0.144/28
 WAN: 10.10.10.2/30, Upstream gateway address: 10.10.10.1 (pfSense), gateway name server = No, Name server for now: my pihole (192.168.178.40) which should be reachable if configured correctly. I'll take care of it later.
+
+![opnsense_ip_config.png](/homelab/infrastructure/opnsense_ip_config.png)
+
+Then I enabled *VLAN aware* on vmbr3 and for to access the web GUI via the management VLAN I set the bridge of the ubuntu-clt-01 machine to vmbr3 and also set the VLAN Tag to 99:
+
+![ubuntu_clt_management_vlan.png](/homelab/infrastructure/ubuntu_clt_management_vlan.png)
+
