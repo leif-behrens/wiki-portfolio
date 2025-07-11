@@ -2,7 +2,7 @@
 title: Initial Setup Walkthrough
 description: 
 published: true
-date: 2025-07-11T10:44:21.596Z
+date: 2025-07-11T10:53:07.651Z
 tags: 
 editor: markdown
 dateCreated: 2025-07-04T15:56:03.506Z
@@ -124,4 +124,10 @@ After the reboot the OPNsense wants me to configure the interfaces and the first
 
 Then it asked me to configure VLANs now. I selected *y*.
 parent interface: vtnet1 
-VLAN tags: 10 (Admin), 20 (Client), 30 (Domain Services), 40 (Application)
+VLAN tags: 99 (Management), 10 (Admin), 20 (Client), 30 (Domain Services), 40 (Application)
+
+Then I assigned the WAN, LAN and OPT interfaces as follows:
+
+![opnsense_vlan_config.png](/opnsense_vlan_config.png)
+
+
