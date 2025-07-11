@@ -2,7 +2,7 @@
 title: Initial Setup Walkthrough
 description: 
 published: true
-date: 2025-07-11T10:28:26.085Z
+date: 2025-07-11T10:44:21.596Z
 tags: 
 editor: markdown
 dateCreated: 2025-07-04T15:56:03.506Z
@@ -121,3 +121,7 @@ I created a new network device (net1) and assigned it to vmbr3 (Corp-LAN) and as
 I rebooted the OPNsense to make sure the new NICs are recognized (I am not sure if it was necessary but still I did it).
 
 After the reboot the OPNsense wants me to configure the interfaces and the first question it asked me was "Do you want to configure LAGGs now? [y/N]". I had to look up, what it means and it stands for *Link Aggregation*, which means to bundle multiple interfaces to one virtual interface. Since I already have one virtual interface for each network segment and I don't need a higher throughput, I selected *N*.
+
+Then it asked me to configure VLANs now. I selected *y*.
+parent interface: vtnet1 
+VLAN tags: 10 (Admin), 20 (Client), 30 (Domain Services), 40 (Application)
