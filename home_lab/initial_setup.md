@@ -2,7 +2,7 @@
 title: Initial Setup Walkthrough
 description: 
 published: true
-date: 2025-07-11T21:05:18.717Z
+date: 2025-07-11T21:17:28.318Z
 tags: 
 editor: markdown
 dateCreated: 2025-07-04T15:56:03.506Z
@@ -152,8 +152,9 @@ https://10.10.0.145
 
 After the Login process I realized, that I use the live version and my config will be erased after reboot. After a little research on the [documentation](https://docs.opnsense.org/manual/install.html#installation-instructions) of opnsense I found that I have to login via ssh with the user **installer** and password **opnsense** to start the installation process. Then I followed the installation wizard and left everything at default. After installation I left the root password as is for now and change it later. Before the installation and to avoid configuration again from scratch I downloaded the configuration in the opnsense webinterface (System->Configuration->Backups->Download->Download configuration) because I wasn't sure if the installation from the live version to disk would erase the config.
 
-I forgot to implement the DMZ. So I created a new Bridge (vmbr4) in proxmox and a NIC on the OPNsense, which I assigned to the vmbr4.
+I forgot to implement the DMZ. So I created a new Bridge (vmbr4) in proxmox and a NIC on the OPNsense, which I assigned to the vmbr4. 
+In the web interface I assigned the new NIC (vtnet2) to OPT5, enabled the interface, set the IP address to 172.16.10.1, enabled DHCPv4
 
-## Hardening
+## Hardening and further configuration
 In the web interface I set a new root password. #A..
 I just want the management vlan to be able to access the web GUI
