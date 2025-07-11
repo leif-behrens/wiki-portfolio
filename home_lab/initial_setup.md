@@ -2,7 +2,7 @@
 title: Initial Setup Walkthrough
 description: 
 published: true
-date: 2025-07-11T13:31:49.778Z
+date: 2025-07-11T14:23:54.199Z
 tags: 
 editor: markdown
 dateCreated: 2025-07-04T15:56:03.506Z
@@ -131,10 +131,11 @@ Then I assigned the WAN, LAN and OPT interfaces as follows:
 ![opnsense_vlan_config.png](/homelab/infrastructure/opnsense_vlan_config.png)
 
 After the assignment of the interfaces I configured the IP addresses of each interface:
-LAN: 10.10.0.65/27, IPv6 and DHCP disabled, restore web gui access to default
-OPT1: 10.10.0.129/28
-OPT2: 10.10.0.1/26
-OPT3: 10.10.0.144/28
+LAN: 10.10.0.144/28 (Management), IPv6 and DHCP disabled, restore web gui access to default
+OPT1: 10.10.0.129/28 (VLAN10/Admin)
+OPT2: 10.10.0.1/26 (VLAN20/Clients)
+OPT3: 10.10.0.65/27 (VLAN30/Domain Services)
+OPT4: 10.10.0.97 (VLAN40/Applications)
 WAN: 10.10.10.2/30, Upstream gateway address: 10.10.10.1 (pfSense), gateway name server = No, Name server for now: my pihole (192.168.178.40) which should be reachable if configured correctly. I'll take care of it later.
 
 ![opnsense_ip_config.png](/homelab/infrastructure/opnsense_ip_config.png)
