@@ -2,7 +2,7 @@
 title: Initial Setup Walkthrough
 description: 
 published: true
-date: 2025-07-11T22:25:40.395Z
+date: 2025-07-12T08:34:30.941Z
 tags: 
 editor: markdown
 dateCreated: 2025-07-04T15:56:03.506Z
@@ -164,7 +164,10 @@ In the web interface I set a new root password. #A..
 I just want the management vlan to be able to access the web GUI.
 System -> Settings -> Administration -> Web GUI -> Listen Interfaces: VLAN99
 
-Secure Shell -> Listen Interfaces: VLAN99
+Secure Shell -> Only Listen Interfaces: VLAN99
+
+## Network Design - added VMs
+
 
 ## Firewall Rules
 
