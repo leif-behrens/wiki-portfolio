@@ -2,7 +2,7 @@
 title: Iteration 2
 description: 
 published: true
-date: 2025-07-12T08:38:09.203Z
+date: 2025-07-12T08:44:25.679Z
 tags: 
 editor: markdown
 dateCreated: 2025-07-03T14:56:04.914Z
@@ -15,7 +15,7 @@ dateCreated: 2025-07-03T14:56:04.914Z
 ## Diagram
 ![final_design_v1.png](/homelab/infrastructure/final_design_v1.png)
 
-## Key Changes from [Iteration 1](/home-lab/Infrastructure/Network_Designs/Iteration_1)
+## Key Changes from [Iteration 1](/home_lab/infrastructure/network_designs/iteration1)
 - Switched to OPNsense for the Corp-LAN for a better, more realistic and secure network design
 - VLAN trunk on a single bridge instead of multiple flat bridges and NICs
 - Dedicated DMZ network
