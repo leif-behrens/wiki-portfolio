@@ -2,7 +2,7 @@
 title: Initial Setup Walkthrough
 description: 
 published: true
-date: 2025-07-12T08:34:30.941Z
+date: 2025-07-12T09:01:57.978Z
 tags: 
 editor: markdown
 dateCreated: 2025-07-04T15:56:03.506Z
@@ -168,6 +168,20 @@ Secure Shell -> Only Listen Interfaces: VLAN99
 
 ## Network Design - added VMs
 
+I added some VMs to my [network design](/home_lab/infrastructure/network_designs/iteration3) so my network design looks like this:
+
+![final_design_v2.png](/homelab/infrastructure/final_design_v2.png)
+
+I configured the VMs accordingly in proxmox (bridges and NICs).
+
+| VM | Bridge | VLAN Tag |
+| --- | --- | --- |
+| kali-prpl-01 | vmbr3 (Corp-LAN) | 10 |
+| win10-01 | vmbr3 (Corp-LAN) | 20 |
+| win22-01 | vmbr3 (Corp-LAN) | 30 |
+| ubuntu-srv-01 | vmbr3 (Corp-LAN) | 40 |
+| ubuntu-clt-01 | vmbr3 (Corp-LAN) | 99 |
+| kali-01 | vmbr2 (Attack-LAN) | - |
 
 ## Firewall Rules
 
