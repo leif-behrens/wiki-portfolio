@@ -2,7 +2,7 @@
 title: Reflektion
 description: 
 published: false
-date: 2025-07-18T14:27:11.571Z
+date: 2025-07-18T14:30:53.402Z
 tags: 
 editor: markdown
 dateCreated: 2025-07-18T14:27:11.571Z
@@ -10,12 +10,12 @@ dateCreated: 2025-07-18T14:27:11.571Z
 
 # Reflektion
 
-| 📅 Datum | Was habe ich heute gemacht? | Was lief gut? | Was lief nicht so gut? | Was habe ich gelernt? | Sonstiges? |
+| 📅 Datum | Was habe ich heute gemacht? | Was lief gut? | Was lief nicht so gut? | Was habe ich gelernt? | Sonstige Gedanken |
 | --- | --- | --- | --- | --- | --- |
 
 
 
-
+<!--
 ## 📅 2025-07-18
 ### Was habe ich heute gemacht?
 PLACEHOLDER
@@ -34,3 +34,4 @@ PLACEHOLDER
 
 ## 📅 2025-07-17
 
+-->
