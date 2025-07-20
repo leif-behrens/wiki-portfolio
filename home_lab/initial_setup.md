@@ -2,7 +2,7 @@
 title: Initial Setup Walkthrough
 description: 
 published: true
-date: 2025-07-12T10:02:53.295Z
+date: 2025-07-20T16:07:40.712Z
 tags: 
 editor: markdown
 dateCreated: 2025-07-04T15:56:03.506Z
@@ -184,9 +184,23 @@ I configured the VMs accordingly in proxmox (bridges and NICs).
 | kali-01 | vmbr2 (Attack-LAN) | - |
 
 ## pfSense config
-I want the pfSense to be "invisable" for the Corp and Attack LAN. It should be like "the internet"/ISP/Gateway for Corp and Attack LAN. To configure the pfSense accordingly I temporarily switched the subnet of the p2p link between pfsense and opnsense to /29 so I have an available ip address in the net 10.10.10.0. I temporarily switched the IP address and network bridge of the ubuntu-clt-01 accordingly so I was able to access the web GUI.
+I want the pfSense to be "invisable" for the Corp and Attack LAN. It should be like "the internet"/ISP/Gateway for Corp and Attack LAN and works as a router. So its job is just routing and NAT between the different LANs (in this case Attack-LAN and Corp-LAN). To configure the pfSense accordingly I temporarily switched the subnet of the p2p link between pfsense and opnsense to /29 so I have an available ip address in the net 10.10.10.0. I temporarily switched the IP address and network bridge of the ubuntu-clt-01 accordingly so I was able to access the web GUI.
 
 First I saw an update is available (2.8.0) which I installed. 
 
-## Firewall Rules
+### Firmware Update
+
+### Time synchronization
+NTP
+
+### Backup
+
+### SSH-Access
+
+### Restrict access to Web GUI of the pfSense
+
+### Change password
+
+### Interface config
+- Allow/route
 
