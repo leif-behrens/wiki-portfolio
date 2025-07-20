@@ -2,7 +2,7 @@
 title: Home Lab
 description: 
 published: true
-date: 2025-07-10T12:46:15.104Z
+date: 2025-07-20T15:34:09.964Z
 tags: 
 editor: markdown
 dateCreated: 2025-06-20T07:42:10.214Z
@@ -66,6 +66,6 @@ Each item links to its own page:
 
 ## Architecture Overview
 
-![final_design_v1.png](/homelab/infrastructure/final_design_v1.png)
+![final_design_v2.png](/homelab/infrastructure/final_design_v2.png)
 
 ---
