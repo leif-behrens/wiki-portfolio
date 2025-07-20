@@ -2,7 +2,7 @@
 title: Initial Setup Walkthrough
 description: 
 published: true
-date: 2025-07-20T16:41:35.925Z
+date: 2025-07-20T17:03:25.792Z
 tags: 
 editor: markdown
 dateCreated: 2025-07-04T15:56:03.506Z
@@ -196,23 +196,25 @@ Domain: home.arpa (default)
 #### DNS Server Settings
 ![dns_settings.png](/homelab/infrastructure/dns_settings.png)
 
-### Localization
+#### Localization
 ![localization.png](/homelab/infrastructure/localization.png)
 
+### Enforce HTTPS
+Under System->Advanced->Admin Access I clicked on HTTPS and saved the settings.
 
 ### Firmware Update
 First I saw an update is available (2.8.0) which I installed. 
 
-### Time synchronization
-NTP
-
 ### Backup
 
 ### SSH-Access
+Is disabled
 
 ### Restrict access to Web GUI of the pfSense
 
 ### Change password
+System->User Manager->Users
+Changed the admin User password (saved it in password manager)
 
 ### Interface config
 - Allow/route
