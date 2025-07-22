@@ -2,7 +2,7 @@
 title: ItsyBitsy
 description: 
 published: true
-date: 2025-07-22T20:02:12.886Z
+date: 2025-07-22T20:11:09.660Z
 tags: 
 editor: markdown
 dateCreated: 2025-07-22T15:11:47.632Z
@@ -24,10 +24,32 @@ During normal SOC monitoring, Analyst John observed an alert on an IDS solution 
 Our task in this room will be to examine the network connection logs of this user, find the link and the content of the file, and answer the questions.
 
 
-## How many events were returned for the month of March 2022?
+## 1 How many events were returned for the month of March 2022?
 1482
 
 
-## What is the IP associated with the suspected user in the logs?
+## 2 What is the IP associated with the suspected user in the logs?
 
 There were 2 possible IPs. I assumed the IP with more traffic would be the suspicious one, that is communicating with the C2 server. But I was wrong, the IP with just 2 log entries was associated with the suspected user. But if you look closer to the connections of the host 192.166.65.52 you see all regular common user agents (Mozilla/5.0). The host 192.166.65.54 has a suspicious user agent (bitsadmin) which is an indicator that it's not a regular http connection of a user via browser.
+
+
+## 3 The user’s machine used a legit windows binary to download a file from the C2 server. What is the name of the binary?
+
+
+## 4 The infected machine connected with a famous filesharing site in this period, which also acts as a C2 server used by the malware authors to communicate. What is the name of the filesharing site?
+
+pastebin.com
+
+## 5 What is the full URL of the C2 to which the infected host is connected?
+5_1
+pastebin.com/yTg0Ah6a
+
+## 6 A file was accessed on the filesharing site. What is the name of the file accessed?
+secret.txt
+
+## 7 The file contains a secret code with the format THM{_____}.
+
+> `THM{SECRET__CODE}`
+
+
+
