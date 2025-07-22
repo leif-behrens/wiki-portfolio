@@ -2,7 +2,7 @@
 title: Snort Challenge - The Basics
 description: 
 published: true
-date: 2025-06-24T07:44:34.229Z
+date: 2025-07-22T20:18:13.732Z
 tags: 
 editor: markdown
 dateCreated: 2025-06-24T07:37:36.347Z
@@ -10,10 +10,10 @@ dateCreated: 2025-06-24T07:37:36.347Z
 
 # Snort Challenge - The Basics
 
-> **Date**: 2025-05-29<br>
-> **Categories**: SOC | Tool | Sniffing | Analyzing<br>
-> **Difficulty**: ~~Unknown~~ | ~~Easy~~ | Medium | ~~Hard~~ <br>
-> **Reference**: https://tryhackme.com/room/snortchallenges1<br>
+> **Date**: 2025-05-29
+> **Categories**: SOC | Tool | Sniffing | Analyzing
+> **Difficulty**: ~~Unknown~~ | ~~Easy~~ | Medium | ~~Hard~~
+> **Reference**: https://tryhackme.com/room/snortchallenges1
 
 ---
 <br> 
