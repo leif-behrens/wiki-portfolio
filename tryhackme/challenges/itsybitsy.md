@@ -2,7 +2,7 @@
 title: ItsyBitsy
 description: 
 published: true
-date: 2025-07-22T20:36:42.759Z
+date: 2025-07-22T20:46:07.170Z
 tags: 
 editor: markdown
 dateCreated: 2025-07-22T15:11:47.632Z
@@ -39,10 +39,10 @@ I just set the time filter to March 1^st^ - March 31^st^:
 
 ### 2. What is the IP associated with the suspected user in the logs?
 
-There were 2 possible IPs. I assumed the IP with more traffic would be the suspicious one, that is communicating with the C2 server. But I was wrong, the IP with just 2 log entries was associated with the suspected user. But if you look closer to the connections of the host 192.166.65.52 you see all regular common user agents (Mozilla/5.0). The host 192.166.65.54 has a suspicious user agent (bitsadmin) which is an indicator that it's not a regular http connection of a user via browser.
+
+There were two possible IPs. I assumed that the IP with more traffic would be the suspicious one, the one communicating with the C2 server, but I was wrong. The IP with just two log entries was associated with the suspected user. However, if you look more closely at the connections of host 192.166.65.52, you will see only regular, common user agents (Mozilla/5.0). In contrast, host 192.166.65.54 has a suspicious user agent (bitsadmin), which indicates that it is not a regular HTTP connection from a user via browser.
 
 ![2_1.png](/thm/challenges/itsybitsy/2_1.png)
-
 
 ![2_2.png](/thm/challenges/itsybitsy/2_2.png)
 ^192.166.65.52^
@@ -58,7 +58,7 @@ There were 2 possible IPs. I assumed the IP with more traffic would be the suspi
 
 ### 3. The user’s machine used a legit windows binary to download a file from the C2 server. What is the name of the binary?
 
-It was the user agent I mentioned in question 2 that has been used to download this file from the C2 server.
+The user agent referenced in question 2 was used to download a file from the C2 server.
 
 ![3_1.png](/thm/challenges/itsybitsy/3_1.png)
 
@@ -70,7 +70,8 @@ It was the user agent I mentioned in question 2 that has been used to download t
 
 ### 4. The infected machine connected with a famous filesharing site in this period, which also acts as a C2 server used by the malware authors to communicate. What is the name of the filesharing site?
 
-According to the log the host is `pastebin.com` as you can see in the following screenshot:
+According to the log, the host is pastebin.com, as shown in the following screenshot:
+
 ![4_1.png](/thm/challenges/itsybitsy/4_1.png)
 
 > pastebin.com
@@ -81,7 +82,7 @@ According to the log the host is `pastebin.com` as you can see in the following 
 
 ### 5. What is the full URL of the C2 to which the infected host is connected?
 
-The full URL is just the host and the URI that you can see in the log:
+The full URL consists of the host and the URI, as shown in the log:
 
 ![5_1.png](/thm/challenges/itsybitsy/5_1.png)
 
@@ -93,7 +94,7 @@ The full URL is just the host and the URI that you can see in the log:
 
 ### 6. A file was accessed on the filesharing site. What is the name of the file accessed?
 
-I opened the mentioned URL of question 5 (*pastebin.com/yTg0Ah6a*) and there was a text file uploaded:
+I opened the URL mentioned in question 5 (pastebin.com/yTg0Ah6a), where a text file had been uploaded:
 
 ![6_1.png](/thm/challenges/itsybitsy/6_1.png)
 
@@ -103,9 +104,9 @@ I opened the mentioned URL of question 5 (*pastebin.com/yTg0Ah6a*) and there was
 ---
 <br>
 
-### 7 The file contains a secret code with the format THM{_____}.
+### 7 The file contains a secret code with the format `THM{_____}`.
 
-The content of the file is `THM{SECRET__CODE}` as you can see in the following screenshot:
+The content of the file is THM{SECRET__CODE}, as shown in the following screenshot:
 
 ![7_1.png](/thm/challenges/itsybitsy/7_1.png)
 
