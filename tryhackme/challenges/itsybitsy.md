@@ -2,7 +2,7 @@
 title: ItsyBitsy
 description: 
 published: true
-date: 2025-07-22T20:46:07.170Z
+date: 2025-07-22T20:46:24.873Z
 tags: 
 editor: markdown
 dateCreated: 2025-07-22T15:11:47.632Z
@@ -106,7 +106,7 @@ I opened the URL mentioned in question 5 (pastebin.com/yTg0Ah6a), where a text f
 
 ### 7 The file contains a secret code with the format `THM{_____}`.
 
-The content of the file is THM{SECRET__CODE}, as shown in the following screenshot:
+The content of the file is `THM{SECRET__CODE}`, as shown in the following screenshot:
 
 ![7_1.png](/thm/challenges/itsybitsy/7_1.png)
 
