@@ -2,13 +2,17 @@
 title: Secret Recipe
 description: 
 published: true
-date: 2025-08-07T09:39:40.350Z
+date: 2025-08-07T10:07:57.292Z
 tags: 
 editor: markdown
 dateCreated: 2025-08-07T07:58:23.024Z
 ---
 
 # Secret Recipe
+
+> **Date**: 2025-08-07
+> **Difficulty**: ~~Unknown~~ | ~~Easy~~ | Medium | ~~Hard~~
+> **Reference**: https://tryhackme.com/room/registry4n6
 
 ## 1. What is the computer name of the machine found in the registry?
 
