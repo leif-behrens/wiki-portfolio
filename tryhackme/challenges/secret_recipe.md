@@ -2,7 +2,7 @@
 title: Secret Recipe
 description: 
 published: true
-date: 2025-08-07T10:14:58.667Z
+date: 2025-08-07T10:15:45.056Z
 tags: 
 editor: markdown
 dateCreated: 2025-08-07T07:58:23.024Z
@@ -187,7 +187,7 @@ The evidence is found in the NTUSER.DAT as well:
 ---
 <br> 
 
-## 13. What is the recent text file opened by the suspect?
+### 13. What is the recent text file opened by the suspect?
 
 Recent files are stored in ROOT\Software\Microsoft\Windows\CurrentVersion\Explorer\RecentDocs\\.txt of the NTUSER.DAT hive:
 
