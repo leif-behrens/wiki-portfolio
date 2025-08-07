@@ -2,7 +2,7 @@
 title: Secret Recipe
 description: 
 published: true
-date: 2025-08-07T09:04:54.010Z
+date: 2025-08-07T09:10:38.198Z
 tags: 
 editor: markdown
 dateCreated: 2025-08-07T07:58:23.024Z
@@ -128,3 +128,22 @@ The evidence is found in the NTUSER.DAT as well
 {.is-success}
 
 ## 12. The user searched for a network utility tool to transfer files using the file explorer. What is the name of that tool?
+
+The evidence is found in the NTUSER.DAT as well
+\ROOT\Software\Microsoft\Windows\CurrentVersion\Explorer\WordWheelQuery
+
+![12_1.png](/thm/challenges/secret_recipe/12_1.png)
+
+> netcat
+{.is-success}
+
+## 13. What is the recent text file opened by the suspect?
+
+Recent files are stored in ROOT\Software\Microsoft\Windows\CurrentVersion\Explorer\RecentDocs\\.txt of the NTUSER.DAT hive:
+
+![13_1.png](/thm/challenges/secret_recipe/13_1.png)
+
+> secret-code.txt
+{.is-success}
+
+
