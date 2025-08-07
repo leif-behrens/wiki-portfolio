@@ -2,7 +2,7 @@
 title: Snapped Phish-ing Line
 description: 
 published: true
-date: 2025-08-07T16:35:03.539Z
+date: 2025-08-07T16:37:49.696Z
 tags: 
 editor: markdown
 dateCreated: 2025-08-07T15:51:06.547Z
@@ -84,4 +84,19 @@ I had issues how to proceed since I would never just click on a suspicous link. 
 > hxxp[: //]kennaroads[.]buzz/data/Update365[.]zip
 {.is-success}
 
+---
+<br>
 
+### 5. What is the SHA256 hash of the phishing kit archive?
+
+I downloaded the file and used sha256sum in the shell to get the hash:
+
+![5_1.png](/thm/challenges/snapped_phish-ing_line/5_1.png)
+
+> ba3c15267393419eb08c7b2652b8b6b39b406ef300ae8a18fee4d16b19ac9686
+{.is-success}
+
+---
+<br>
+
+### 6. When was the phishing kit archive first submitted? (format: YYYY-MM-DD HH:MM:SS UTC)
