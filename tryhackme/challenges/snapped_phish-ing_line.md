@@ -2,7 +2,7 @@
 title: Snapped Phish-ing Line
 description: 
 published: true
-date: 2025-08-07T16:12:41.455Z
+date: 2025-08-07T16:35:03.539Z
 tags: 
 editor: markdown
 dateCreated: 2025-08-07T15:51:06.547Z
@@ -66,3 +66,22 @@ I was looking at the mail "Group Marketing Online Direct Credit Advice - zoe.dun
 I used CyberChef to decode the content of the html file and also used the defang URL "recipe":
 
 ![3_2.png](/thm/challenges/snapped_phish-ing_line/3_2.png)
+
+> hxxp[: //]kennaroads[.]buzz/data/Update365/office365/40e7baa2f826a57fcf04e5202526f8bd/?email=zoe[.]duncan@swiftspend[.]finance&error
+{.is-success}
+
+---
+<br>
+
+### 4. What is the URL to the .zip archive of the phishing kit? (defanged format)
+
+I had issues how to proceed since I would never just click on a suspicous link. But the hint was to enumerate the url and so I assumed it is a isolated test VM, thats why I proceeded to enumerate the URL from the question before:
+
+![4_1.png](/thm/challenges/snapped_phish-ing_line/4_1.png)
+
+![4_2.png](/thm/challenges/snapped_phish-ing_line/4_2.png)
+
+> hxxp[: //]kennaroads[.]buzz/data/Update365[.]zip
+{.is-success}
+
+
