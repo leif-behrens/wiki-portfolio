@@ -2,7 +2,7 @@
 title: Secret Recipe
 description: 
 published: true
-date: 2025-08-07T09:34:49.856Z
+date: 2025-08-07T09:39:40.350Z
 tags: 
 editor: markdown
 dateCreated: 2025-08-07T07:58:23.024Z
@@ -164,4 +164,18 @@ In the same key as in question 14 I seareched through the program name, set the 
 > wireshark
 {.is-success}
 
-## 15. Registry Hives also note the amount of time a process is in focus. Examine the Hives and confirm for how many seconds was ProtonVPN executed?
+## 16. Registry Hives also note the amount of time a process is in focus. Examine the Hives and confirm for how many seconds was ProtonVPN executed?
+
+In the same key as the both questions before you can see the "Focus Time". I filtered for "proton" in the Program Name and the Focus Time was 5 minutes and 43 seconds (343 seconds):
+
+![16_1.png](/thm/challenges/secret_recipe/16_1.png)
+
+> 343
+{.is-success}
+
+## 17. Everything.exe is a utility used to search for files in a Windows machine. What is the full path from which everything.exe was executed?
+
+![17_1.png](/thm/challenges/secret_recipe/17_1.png)
+
+> C:\Users\Administrator\Downloads\tools\Everything\Everything.exe
+{.is-success}
