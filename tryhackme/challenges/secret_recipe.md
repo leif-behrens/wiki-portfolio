@@ -2,7 +2,7 @@
 title: Secret Recipe
 description: 
 published: true
-date: 2025-08-07T09:10:38.198Z
+date: 2025-08-07T09:34:49.856Z
 tags: 
 editor: markdown
 dateCreated: 2025-08-07T07:58:23.024Z
@@ -146,4 +146,22 @@ Recent files are stored in ROOT\Software\Microsoft\Windows\CurrentVersion\Explor
 > secret-code.txt
 {.is-success}
 
+## 14. How many times was PowerShell executed on this host?
 
+I checked the NTUSER.DAT hive in Software\Microsoft\Windows\CurrentVersion\Explorer\UserAssist and clicked through all the subkeys . In the key {CEBFF5CD-ACE2-4F4F-9178-9926F41749EA}\count i found the different programs that were executed with a counter. I filtered for "powershell" and found the answer:
+
+![14_1.png](/thm/challenges/secret_recipe/14_1.png)
+
+> 3
+{.is-success}
+
+## 15. The suspect also executed a network monitoring tool. What is the name of the tool?
+
+In the same key as in question 14 I seareched through the program name, set the filter for "Run Count" in the Registry Explorer to >= 1 and noticed wireshark, which is a network monitoring tool:
+
+![15_1.png](/thm/challenges/secret_recipe/15_1.png)
+
+> wireshark
+{.is-success}
+
+## 15. Registry Hives also note the amount of time a process is in focus. Examine the Hives and confirm for how many seconds was ProtonVPN executed?
