@@ -2,7 +2,7 @@
 title: Secret Recipe
 description: 
 published: true
-date: 2025-08-07T08:37:00.562Z
+date: 2025-08-07T09:04:54.010Z
 tags: 
 editor: markdown
 dateCreated: 2025-08-07T07:58:23.024Z
@@ -105,3 +105,26 @@ It was kinda unsatisfying because the correct answer is 172.31.2.197 even though
 
 > 172.31.2.197
 {.is-success}
+
+## 10. The suspect seems to have accessed a file containing the secret coffee recipe. What is the name of the file?
+
+For the recent activities I loaded in the NTUSER.DAT to Registry Explorer.
+
+The location of recent files is in ROOT\Software\Microsoft\Windows\CurrentVersion\Explorer\RecentDocs:
+
+![10_1.png](/thm/challenges/secret_recipe/10_1.png)
+
+> secret-recipe.pdf
+{.is-success}
+
+## 11. The suspect executed multiple commands using the Run window. What command was used to enumerate the network interfaces?
+
+The evidence is found in the NTUSER.DAT as well
+\ROOT\Software\Microsoft\Windows\CurrentVersion\Explorer\RunMRU
+
+![11_1.png](/thm/challenges/secret_recipe/11_1.png)
+
+> pnputil /enum-interfaces
+{.is-success}
+
+## 12. The user searched for a network utility tool to transfer files using the file explorer. What is the name of that tool?
