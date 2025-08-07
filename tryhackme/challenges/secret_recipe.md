@@ -2,7 +2,7 @@
 title: Secret Recipe
 description: 
 published: true
-date: 2025-08-07T10:15:45.056Z
+date: 2025-08-07T10:16:25.844Z
 tags: 
 editor: markdown
 dateCreated: 2025-08-07T07:58:23.024Z
@@ -195,6 +195,9 @@ Recent files are stored in ROOT\Software\Microsoft\Windows\CurrentVersion\Explor
 
 > secret-code.txt  
 {.is-success}
+
+---
+<br> 
 
 ### 14. How many times was PowerShell executed on this host?
 
