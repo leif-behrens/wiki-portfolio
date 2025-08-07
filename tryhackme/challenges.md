@@ -2,7 +2,7 @@
 title: Challenges
 description: 
 published: true
-date: 2025-08-07T17:57:53.539Z
+date: 2025-08-07T17:58:24.910Z
 tags: 
 editor: markdown
 dateCreated: 2025-07-07T17:08:40.874Z
@@ -11,7 +11,7 @@ dateCreated: 2025-07-07T17:08:40.874Z
 # Challenges
 
 This section contains write-ups of challenges completed on TryHackMe.
-Each subpage includes step-by-step walkthroughs, tools used, and captured flags.
+Each subpage includes step-by-step walkthroughs, thought and answers to the questions.
 
 
 - [Snort Basics](/tryhackme/challenges/snort_basics)
