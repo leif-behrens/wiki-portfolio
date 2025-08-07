@@ -2,7 +2,7 @@
 title: Secret Recipe
 description: 
 published: true
-date: 2025-08-07T08:14:44.505Z
+date: 2025-08-07T08:37:00.562Z
 tags: 
 editor: markdown
 dateCreated: 2025-08-07T07:58:23.024Z
@@ -87,3 +87,21 @@ Same Hive as in the question before
 ## 8. There were three shared folders observed on his machine. What is the path of the third share?
 
 According to the [Microsoft documentation](https://learn.microsoft.com/en-us/troubleshoot/windows-client/networking/saving-restoring-existing-windows-shares) shared folders are listed in SYSTEM\CurrentControlSet\Services\LanmanServer\Shares
+
+![8_1.png](/thm/challenges/secret_recipe/8_1.png)
+![8_2.png](/thm/challenges/secret_recipe/8_2.png)
+
+> C:\RESTRICTED FILES
+{.is-success}
+
+## 9. What is the last DHCP IP assigned to this host?
+
+In the SYSTEM Hive I found under 
+ROOT\ControlSet001\Services\Tcpip\Parameters\Interfaces three different interfaces that has assigned IPs:
+
+![9_1.png](/thm/challenges/secret_recipe/9_1.png)
+
+It was kinda unsatisfying because the correct answer is 172.31.2.197 even though the last write for this interface was before the interface with the assigned IP 10.10.210.64. I couldn't figure out why it was this network interface. But according to the hint of THM and the possible answer format it had to be 172.31.2.197.
+
+> 172.31.2.197
+{.is-success}
